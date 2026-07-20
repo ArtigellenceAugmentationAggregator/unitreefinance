@@ -54,6 +54,13 @@ header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
 main{max-width:1200px;margin:0 auto;padding:0 24px 90px;position:relative;z-index:1}
+.subnav{position:sticky;top:0;z-index:99;background:var(--blue);border-bottom:1px solid var(--blue-2)}
+.subnav-in{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.subnav-in::-webkit-scrollbar{display:none}
+.subnav a{font-family:var(--mono);font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#B9B2DE;font-weight:500;padding:12px 14px;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.subnav a:hover{color:#fff;border-bottom-color:var(--pink)}
+.subnav a.on{color:#fff;border-bottom-color:var(--pink)}
+.subnav a .em{color:var(--pink-light)}
 .section{padding:56px 0 8px;scroll-margin-top:70px}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2.2px;color:var(--pink);text-transform:uppercase;font-weight:600;margin-bottom:14px}
 .eyebrow .dot{color:var(--blue-light);margin:0 6px}
@@ -331,6 +338,16 @@ footer{border-top:1px solid var(--line);background:var(--bg-2);padding:40px 24px
     </div>
   </div>
 </header>
+
+<nav class="subnav">
+  <div class="subnav-in">
+    <a href="index.html" class="on">◆ Home</a>
+    <a href="unitree_lander_business_loan.html">Business Loans <span class="em">$5k–500k</span></a>
+    <a href="unitree_lander_equipment.html">Equipment Finance</a>
+    <a href="unitree_lander_commercial.html">Commercial Property</a>
+    <a href="https://wa.me/61481823600" target="_blank" rel="noopener" style="margin-left:auto;color:#25D366">WhatsApp →</a>
+  </div>
+</nav>
 
 <main>
 
