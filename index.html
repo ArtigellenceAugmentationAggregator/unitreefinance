@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Unitree Finance · Growth Engine · A Working Prototype for Adi</title>
-<meta name="description" content="A tailored engagement for Aditya Kumar / Unitree Finance — Phase 0 refundable pilot, agents you own, tailored at every meeting as we progress.">
+<title>Unitree Finance × AAA · Your Engine Is Live · Day 1 for Aditya Kumar</title>
+<meta name="description" content="Unitree Finance growth engine — live. What it ships, your lead line, the A$2–3k math, and the two agents that give Adi his time back.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400..600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
   --pink:#E63878; --pink-bright:#F5528F; --pink-deep:#B02458; --pink-soft:#FDEFF5; --pink-light:#F49BB8; --pink-glow:rgba(230,56,120,.28);
   --blue:#2C1E6E; --blue-2:#3B2E8F; --blue-light:#5B7FE0; --blue-soft:#EEF2FC;
   --purple:#8749C6; --purple-bright:#9E63DA; --purple-soft:#F4EBFD;
+  --wa:#25D366; --wa-deep:#128C7E;
   --ink:#161328; --body:#4A4560; --mute:#8A85A0; --mute-soft:#B4AFC5;
   --sans:'DM Sans',-apple-system,sans-serif;
   --mono:'DM Mono',ui-monospace,Menlo,monospace;
@@ -26,7 +27,7 @@ a:hover{color:var(--blue)}
 img{max-width:100%;display:block}
 ::selection{background:var(--pink);color:#fff}
 
-.shape{position:fixed;pointer-events:none;z-index:0;border-radius:50%;filter:blur(2px)}
+.shape{position:fixed;pointer-events:none;z-index:0;border-radius:50%;filter:blur(4px)}
 .shape.a{top:-160px;right:-140px;width:520px;height:520px;background:radial-gradient(circle,var(--pink) 0%,transparent 65%);opacity:.10}
 .shape.b{top:200px;right:-80px;width:280px;height:280px;background:radial-gradient(circle,var(--blue-light) 0%,transparent 70%);opacity:.14}
 .shape.c{bottom:-200px;left:-100px;width:480px;height:480px;background:radial-gradient(circle,var(--purple) 0%,transparent 70%);opacity:.08}
@@ -34,51 +35,49 @@ img{max-width:100%;display:block}
 .top-strip{background:var(--blue);border-bottom:1px solid var(--blue-2);height:38px;display:flex;align-items:center;overflow:hidden;position:relative;z-index:10}
 .top-label{padding:0 18px;font-family:var(--mono);font-size:9.5px;letter-spacing:1.8px;color:var(--pink-light);text-transform:uppercase;font-weight:600;border-right:1px solid rgba(255,255,255,.12);height:100%;display:flex;align-items:center;gap:8px;flex-shrink:0}
 .top-window{flex:1;overflow:hidden;position:relative;display:flex;align-items:center}
-.top-track{display:inline-block;white-space:nowrap;animation:ticker 90s linear infinite;font-family:var(--mono);font-size:11px;color:#E9E4F7;padding-left:100%;font-weight:400}
-.top-track .n{display:inline-block;margin-right:48px}
+.top-track{display:inline-block;white-space:nowrap;animation:ticker 92s linear infinite;font-family:var(--mono);font-size:11px;color:#E9E4F7;padding-left:100%;font-weight:400}
+.top-track .n{display:inline-block;margin-right:46px}
 .top-track .src{color:var(--pink-bright);font-weight:600;margin-right:8px;letter-spacing:1px}
 @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
 header{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}
-.header-inner{max-width:1200px;margin:0 auto;padding:18px 24px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:14px}
-.brand-mark{width:44px;height:44px;background:linear-gradient(135deg,var(--pink),var(--blue-2));border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px;letter-spacing:-1px;box-shadow:0 6px 18px var(--pink-glow)}
-.brand-txt{display:flex;flex-direction:column;line-height:1.15;gap:2px}
+.header-inner{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:13px}
+.brand-mark{width:46px;height:46px;background:linear-gradient(135deg,var(--pink),var(--blue-2));border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px;letter-spacing:-1px;box-shadow:0 6px 18px var(--pink-glow)}
 .brand-txt .n{font-size:17px;font-weight:700;color:var(--blue);letter-spacing:-.4px}
 .brand-txt .n em{color:var(--pink);font-style:normal;font-weight:700;padding:0 2px}
-.brand-txt .sub{font-family:var(--mono);font-size:9.5px;letter-spacing:1.3px;color:var(--mute);text-transform:uppercase;font-weight:500}
-.for-tag{font-family:var(--mono);font-size:10px;letter-spacing:1.3px;color:var(--pink);text-transform:uppercase;padding:7px 12px;background:var(--pink-soft);border:1px solid var(--pink-light);border-radius:20px;font-weight:600}
-.stamp{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.5px;text-align:right;font-weight:500}
+.brand-txt .sub{font-family:var(--mono);font-size:9.5px;letter-spacing:1.3px;color:var(--mute);text-transform:uppercase;font-weight:500;margin-top:2px}
+.stamp{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.5px;text-align:right;font-weight:500;line-height:1.7}
 .stamp b{color:var(--blue);font-weight:700}
+.stamp .live{color:var(--wa-deep);font-weight:700}
+.stamp .live::before{content:'●';color:var(--wa);margin-right:4px;animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
-.tabs{max-width:1200px;margin:0 auto;padding:16px 24px 0;display:flex;gap:2px;border-bottom:1px solid var(--line);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.tabs::-webkit-scrollbar{display:none}
-.tab{padding:14px 18px;font-family:var(--mono);font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mute);cursor:pointer;background:none;border:none;border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s;font-weight:600}
-.tab:hover{color:var(--blue)}
-.tab.active{color:var(--pink);border-bottom-color:var(--pink);background:linear-gradient(180deg,transparent 60%,var(--pink-soft))}
-.tab .n{color:var(--blue-light);margin-right:8px;opacity:.9;font-weight:500}
-
-main{max-width:1200px;margin:0 auto;padding:52px 24px 80px;min-height:80vh;position:relative;z-index:1}
-.panel{display:none;animation:fadein .35s ease}
-.panel.active{display:block}
-@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-
+main{max-width:1200px;margin:0 auto;padding:0 24px 90px;position:relative;z-index:1}
+.section{padding:56px 0 8px;scroll-margin-top:70px}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2.2px;color:var(--pink);text-transform:uppercase;font-weight:600;margin-bottom:14px}
 .eyebrow .dot{color:var(--blue-light);margin:0 6px}
-.h1{font-family:var(--sans);font-weight:700;font-size:clamp(30px,4.6vw,50px);line-height:1.08;letter-spacing:-1px;color:var(--ink);margin-bottom:22px}
+.eyebrow .num{color:var(--blue-light);font-weight:600}
+.h1{font-family:var(--sans);font-weight:700;font-size:clamp(32px,5vw,56px);line-height:1.06;letter-spacing:-1.4px;color:var(--ink);margin-bottom:22px}
 .h1 em{font-style:italic;color:var(--pink);font-weight:500}
-.h1 .under{background:linear-gradient(180deg,transparent 60%,var(--pink-soft) 60%);padding:0 4px}
-.lead{font-size:17px;line-height:1.65;color:var(--body);max-width:820px;margin-bottom:36px;font-weight:400}
+.h1 .under{background:linear-gradient(180deg,transparent 58%,var(--pink-soft) 58%);padding:0 4px}
+.lead{font-size:17px;line-height:1.65;color:var(--body);max-width:820px;margin-bottom:20px;font-weight:400}
 .lead strong{color:var(--ink);font-weight:600}
 .lead em{color:var(--purple);font-style:italic;font-weight:500}
-.h2{font-family:var(--sans);font-weight:600;font-size:clamp(24px,3vw,32px);letter-spacing:-.5px;line-height:1.2;color:var(--ink);margin:44px 0 18px}
+.h2{font-family:var(--sans);font-weight:600;font-size:clamp(24px,3.2vw,34px);letter-spacing:-.6px;line-height:1.18;color:var(--ink);margin:0 0 10px}
 .h2 em{font-style:italic;color:var(--pink);font-weight:500}
-.h3{font-family:var(--sans);font-weight:700;font-size:19px;color:var(--ink);margin:32px 0 12px;letter-spacing:-.3px}
-.p{font-size:15px;line-height:1.68;color:var(--body);margin-bottom:16px;max-width:820px}
-.p strong{color:var(--ink);font-weight:600}
-.p em{color:var(--purple);font-style:italic;font-weight:500}
+.h2 .b{color:var(--blue)}
+.sec-sub{font-size:15.5px;line-height:1.65;color:var(--body);max-width:760px;margin-bottom:26px}
+.sec-sub strong{color:var(--ink);font-weight:600}
+.sec-sub em{color:var(--purple);font-style:italic;font-weight:500}
 
-.card{background:linear-gradient(180deg,var(--bg),var(--bg-2));border:1px solid var(--line);border-radius:14px;padding:26px 24px;position:relative;overflow:hidden;transition:all .25s;box-shadow:0 2px 10px rgba(44,30,110,.04)}
+/* hero */
+.hero{padding:60px 0 20px;position:relative}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--wa-deep);background:rgba(37,211,102,.10);border:1px solid rgba(37,211,102,.35);border-radius:20px;padding:7px 14px;font-weight:600;margin-bottom:20px}
+.hero .badge::before{content:'●';color:var(--wa);animation:pulse 1.6s infinite}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+.card{background:linear-gradient(180deg,var(--bg),var(--bg-2));border:1px solid var(--line);border-radius:14px;padding:24px 22px;position:relative;overflow:hidden;transition:all .25s;box-shadow:0 2px 10px rgba(44,30,110,.04)}
 .card.pink{border-color:var(--pink-light);background:linear-gradient(180deg,var(--pink-soft),var(--bg))}
 .card.blue{border-color:var(--blue-light);background:linear-gradient(180deg,var(--blue-soft),var(--bg))}
 .card.purple{border-color:#D6C1F0;background:linear-gradient(180deg,var(--purple-soft),var(--bg))}
@@ -86,9 +85,9 @@ main{max-width:1200px;margin:0 auto;padding:52px 24px 80px;min-height:80vh;posit
 .card-tag{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--pink);text-transform:uppercase;font-weight:700;margin-bottom:10px}
 .card-tag.b{color:var(--blue-2)}
 .card-tag.p{color:var(--purple)}
-.card-title{font-family:var(--sans);font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.3px;line-height:1.2;margin-bottom:10px}
+.card-title{font-family:var(--sans);font-size:19px;font-weight:700;color:var(--ink);letter-spacing:-.3px;line-height:1.2;margin-bottom:9px}
 .card-title em{font-style:italic;font-weight:500;color:var(--pink)}
-.card-body{font-size:14px;color:var(--body);line-height:1.6}
+.card-body{font-size:13.5px;color:var(--body);line-height:1.6}
 .card-body strong,.card-body b{color:var(--ink);font-weight:600}
 .card-body em{color:var(--purple);font-style:italic;font-weight:500}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
@@ -96,234 +95,223 @@ main{max-width:1200px;margin:0 auto;padding:52px 24px 80px;min-height:80vh;posit
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}
 @media(max-width:900px){.grid-3,.grid-4,.grid-2{grid-template-columns:1fr}}
 
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}
-.stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px 18px;text-align:center;box-shadow:0 2px 8px rgba(44,30,110,.03)}
-.stat.warn{border-color:var(--pink-light);background:linear-gradient(180deg,var(--pink-soft),var(--bg))}
-.stat.blue{border-color:var(--blue-light);background:linear-gradient(180deg,var(--blue-soft),var(--bg))}
-.stat.purple{border-color:#D6C1F0;background:linear-gradient(180deg,var(--purple-soft),var(--bg))}
-.stat .big{font-family:var(--sans);font-size:32px;font-weight:700;color:var(--pink);letter-spacing:-.5px;line-height:1;margin-bottom:8px}
-.stat.blue .big{color:var(--blue)}
-.stat.purple .big{color:var(--purple)}
-.stat.warn .big{color:var(--pink-deep)}
-.stat .lbl{font-family:var(--mono);font-size:9.5px;color:var(--mute);letter-spacing:.7px;line-height:1.4;text-transform:uppercase;font-weight:600}
-@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+/* example mockups */
+.ex{background:var(--bg);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:all .25s;box-shadow:0 3px 14px rgba(44,30,110,.05);display:flex;flex-direction:column}
+.ex:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(44,30,110,.12);border-color:var(--pink-light)}
+.ex-head{padding:12px 16px;border-bottom:1px solid var(--line-soft);display:flex;align-items:center;justify-content:space-between;background:var(--bg-2)}
+.ex-head .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--blue);font-weight:600}
+.ex-head .n{font-family:var(--mono);font-size:9px;color:var(--mute);letter-spacing:1px}
+.ex-body{padding:0;position:relative;flex:1}
+.sample-flag{position:absolute;top:9px;right:9px;font-family:var(--mono);font-size:8px;letter-spacing:1px;text-transform:uppercase;color:var(--pink-deep);background:var(--pink-soft);border:1px solid var(--pink-light);border-radius:5px;padding:2px 6px;font-weight:600;z-index:3}
+.ex-cap{padding:13px 16px;border-top:1px solid var(--line-soft);font-size:12.5px;color:var(--body);line-height:1.5}
+.ex-cap b{color:var(--ink);font-weight:600}
 
-.said{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--pink);border-radius:0 10px 10px 0;padding:18px 22px;margin:12px 0;box-shadow:0 1px 6px rgba(44,30,110,.03)}
-.said .q{font-family:var(--sans);font-style:italic;font-size:16px;color:var(--ink);line-height:1.5;margin-bottom:8px;font-weight:500}
-.said .q::before{content:'"';color:var(--pink);font-size:26px;line-height:0;margin-right:2px;vertical-align:-6px;font-weight:700}
-.said .q::after{content:'"';color:var(--pink);font-size:26px;line-height:0;margin-left:2px;vertical-align:-6px;font-weight:700}
-.said .from{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:1.4px;text-transform:uppercase;font-weight:500}
-.said .from b{color:var(--pink);font-weight:700}
-.means{background:var(--blue-soft);border:1px solid var(--blue-light);border-radius:10px;padding:16px 20px;margin:8px 0 24px;font-size:14.5px;color:var(--body);line-height:1.65}
-.means b{color:var(--blue);font-family:var(--mono);font-size:10px;letter-spacing:1.4px;text-transform:uppercase;display:block;margin-bottom:6px;font-weight:700}
-.means em{color:var(--purple);font-style:italic;font-weight:500}
+/* mock: landing */
+.mk-land{padding:22px 18px;background:linear-gradient(140deg,var(--blue),var(--blue-2));color:#fff;min-height:150px}
+.mk-land .kick{font-family:var(--mono);font-size:8.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--pink-light);font-weight:600;margin-bottom:8px}
+.mk-land h5{font-size:18px;font-weight:700;letter-spacing:-.4px;line-height:1.15;margin-bottom:8px}
+.mk-land h5 em{color:var(--pink-bright);font-style:normal}
+.mk-land p{font-size:11px;color:#C9C2E8;line-height:1.5;margin-bottom:12px}
+.mk-land .btn{display:inline-block;background:var(--pink);color:#fff;font-size:10px;font-weight:700;padding:8px 14px;border-radius:8px;letter-spacing:.3px}
+/* mock: social */
+.mk-social{padding:26px 16px 16px;background:var(--bg)}
+.mk-social .row{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.mk-social .av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--blue-2));flex-shrink:0}
+.mk-social .who{font-size:11px;font-weight:700;color:var(--ink)}
+.mk-social .who small{display:block;font-weight:400;color:var(--mute);font-size:9px;font-family:var(--mono)}
+.mk-social .post{font-size:12px;color:var(--ink);line-height:1.5;font-weight:500}
+.mk-social .post b{color:var(--pink-deep)}
+.mk-social .tags{font-size:10px;color:var(--blue-light);margin-top:8px;font-weight:600}
+.mk-social .eng{display:flex;gap:14px;margin-top:11px;padding-top:9px;border-top:1px solid var(--line-soft);font-family:var(--mono);font-size:9px;color:var(--mute)}
+/* mock: email */
+.mk-mail{padding:26px 16px 16px;background:var(--bg)}
+.mk-mail .subj{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.mk-mail .meta{font-family:var(--mono);font-size:9px;color:var(--mute);margin-bottom:11px;padding-bottom:9px;border-bottom:1px solid var(--line-soft)}
+.mk-mail .ln{font-size:11px;color:var(--body);line-height:1.55;margin-bottom:7px}
+.mk-mail .ln b{color:var(--ink)}
+.mk-mail .cta{display:inline-block;background:var(--purple);color:#fff;font-size:9.5px;font-weight:700;padding:6px 12px;border-radius:7px;margin-top:3px}
+/* mock: review */
+.mk-rev{padding:18px 16px;background:linear-gradient(160deg,var(--pink-soft),var(--bg))}
+.mk-rev .stars{color:#F5A623;font-size:15px;letter-spacing:2px;margin-bottom:9px}
+.mk-rev .quote{font-size:13px;color:var(--ink);line-height:1.5;font-weight:500;font-style:italic;margin-bottom:10px}
+.mk-rev .by{font-family:var(--mono);font-size:9.5px;color:var(--blue);font-weight:600;letter-spacing:.5px}
+.mk-rev .by span{color:var(--mute);font-weight:400}
+/* mock: AI answer */
+.mk-ai{padding:26px 16px 16px;background:var(--bg)}
+.mk-ai .q{display:flex;gap:8px;align-items:flex-start;margin-bottom:11px}
+.mk-ai .q .ic{width:22px;height:22px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700}
+.mk-ai .q .t{font-size:11.5px;color:var(--ink);font-weight:600;line-height:1.4}
+.mk-ai .a{display:flex;gap:8px;align-items:flex-start}
+.mk-ai .a .ic{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--purple),var(--blue-2));color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700}
+.mk-ai .a .t{font-size:11px;color:var(--body);line-height:1.55}
+.mk-ai .a .t b{color:var(--pink-deep);font-weight:700}
 
-ul.list{list-style:none;padding:0;margin:14px 0}
-ul.list li{position:relative;padding-left:22px;margin-bottom:10px;color:var(--body);font-size:15px;line-height:1.6}
-ul.list li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;background:var(--pink);border-radius:50%}
-ul.list li b{color:var(--ink);font-weight:600}
-ul.list li em{color:var(--purple);font-style:italic;font-weight:500}
-ul.list.blue li::before{background:var(--blue-2)}
-ul.list.purple li::before{background:var(--purple)}
+/* testimonial */
+.testi{background:linear-gradient(135deg,var(--blue),var(--blue-2));border-radius:18px;padding:34px 34px;color:#fff;position:relative;overflow:hidden;box-shadow:0 12px 40px rgba(44,30,110,.25);margin-top:8px}
+.testi::before{content:'"';position:absolute;top:-10px;left:24px;font-size:120px;color:var(--pink);opacity:.35;font-family:Georgia,serif;line-height:1}
+.testi .flag{position:absolute;top:16px;right:18px;font-family:var(--mono);font-size:8.5px;letter-spacing:1px;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:5px;padding:3px 8px;font-weight:600}
+.testi .q{font-size:20px;line-height:1.45;font-weight:500;letter-spacing:-.3px;position:relative;margin:10px 0 18px;max-width:820px}
+.testi .q em{color:var(--pink-bright);font-style:normal;font-weight:600}
+.testi .by{display:flex;align-items:center;gap:12px}
+.testi .by .av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));flex-shrink:0}
+.testi .by .who{font-size:13px;font-weight:700}
+.testi .by .who small{display:block;font-weight:400;color:#B9B2DE;font-family:var(--mono);font-size:10px;margin-top:2px}
+.testi .stars{color:#F5A623;font-size:15px;letter-spacing:2px;margin-left:auto}
 
-.timeline{border-left:2px solid var(--line);margin:32px 0 32px 12px;padding-left:28px;position:relative}
-.tl-item{margin-bottom:32px;position:relative}
-.tl-item::before{content:'';position:absolute;width:14px;height:14px;background:#fff;border:2.5px solid var(--pink);border-radius:50%;left:-37px;top:6px;box-shadow:0 0 0 3px #fff}
-.tl-item.done::before{background:var(--pink)}
-.tl-item.b::before{border-color:var(--blue-2)}
-.tl-item.b.done::before{background:var(--blue-2)}
-.tl-tag{font-family:var(--mono);font-size:10px;letter-spacing:1.4px;color:var(--pink);text-transform:uppercase;font-weight:700;margin-bottom:6px}
-.tl-item.b .tl-tag{color:var(--blue-2)}
-.tl-h{font-family:var(--sans);font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.3px;margin-bottom:6px}
-.tl-h em{font-style:italic;font-weight:500;color:var(--pink)}
-.tl-p{font-size:14px;color:var(--body);line-height:1.65;max-width:720px}
-.tl-p b{color:var(--ink);font-weight:600}
-.tl-p em{color:var(--purple);font-style:italic}
+/* lead line block */
+.leadbox{background:linear-gradient(135deg,#0B1F1A,#123830);border-radius:20px;padding:0;overflow:hidden;position:relative;box-shadow:0 14px 44px rgba(18,140,126,.28);border:1px solid rgba(37,211,102,.3)}
+.leadbox-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:0}
+@media(max-width:820px){.leadbox-grid{grid-template-columns:1fr}}
+.leadbox-l{padding:34px 32px;color:#fff}
+.leadbox-l .k{font-family:var(--mono);font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--wa);font-weight:600;margin-bottom:12px}
+.leadbox-l .k::before{content:'●';margin-right:7px;animation:pulse 1.6s infinite}
+.leadbox-l h3{font-size:27px;font-weight:700;letter-spacing:-.7px;line-height:1.12;margin-bottom:12px}
+.leadbox-l h3 em{color:var(--wa);font-style:normal}
+.leadbox-l p{font-size:14px;color:#B8D4CC;line-height:1.6;margin-bottom:20px;max-width:420px}
+.leadrow{display:flex;align-items:center;gap:12px;margin-bottom:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:11px;padding:12px 15px}
+.leadrow .ic{width:34px;height:34px;border-radius:9px;background:rgba(37,211,102,.16);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.leadrow .ic svg{width:19px;height:19px}
+.leadrow .tx{flex:1;line-height:1.3}
+.leadrow .tx .lb{font-family:var(--mono);font-size:9px;letter-spacing:1.2px;text-transform:uppercase;color:#7FB9AC;font-weight:500}
+.leadrow .tx .vl{font-size:15px;font-weight:700;color:#fff;letter-spacing:.2px}
+.leadrow .cp{font-family:var(--mono);font-size:8.5px;color:#8FC7BA;letter-spacing:.5px;cursor:pointer;border:1px solid rgba(255,255,255,.18);border-radius:6px;padding:5px 8px;transition:all .2s;user-select:none}
+.leadrow .cp:hover{background:rgba(37,211,102,.2);color:#fff}
+.wa-btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#0B1F1A;font-weight:700;font-size:13px;padding:14px 22px;border-radius:11px;margin-top:6px;transition:all .2s;box-shadow:0 6px 18px rgba(37,211,102,.3)}
+.wa-btn:hover{background:#2ee574;transform:translateY(-1px);color:#0B1F1A}
+.wa-btn svg{width:19px;height:19px}
+/* chat preview panel inside leadbox */
+.leadbox-r{background:linear-gradient(180deg,#0E2822,#0A1C17);padding:22px;display:flex;flex-direction:column;border-left:1px solid rgba(255,255,255,.08)}
+.chatprev-head{display:flex;align-items:center;gap:10px;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.chatprev-head .av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--blue-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:15px}
+.chatprev-head .nm{font-size:12.5px;font-weight:700;color:#fff}
+.chatprev-head .nm small{display:block;font-family:var(--mono);font-size:8.5px;color:var(--wa);font-weight:400;margin-top:1px}
+.chatprev-head .nm small::before{content:'●';margin-right:4px}
+.bubbles{display:flex;flex-direction:column;gap:9px}
+.bub{max-width:82%;padding:9px 13px;border-radius:13px;font-size:12px;line-height:1.45;animation:fadein .4s ease both}
+.bub.bot{background:#1C3B33;color:#E8F5F0;border-bottom-left-radius:4px;align-self:flex-start}
+.bub.bot b{color:var(--wa)}
+.bub.usr{background:var(--wa);color:#0B1F1A;border-bottom-right-radius:4px;align-self:flex-end;font-weight:600}
+.bub .qr{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+.bub .qr span{font-size:10px;background:rgba(37,211,102,.14);border:1px solid rgba(37,211,102,.3);color:var(--wa);border-radius:14px;padding:4px 9px;font-weight:600}
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
-.mtbl{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;background:var(--bg);border-radius:12px;overflow:hidden;border:1px solid var(--line);box-shadow:0 2px 10px rgba(44,30,110,.04)}
-.mtbl th,.mtbl td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
-.mtbl th{font-family:var(--mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mute);font-weight:600;background:var(--bg-2)}
-.mtbl td.row-lbl{color:var(--body);font-weight:500}
-.mtbl td.now{color:var(--pink);font-family:var(--mono);font-weight:600}
-.mtbl td.aaa{color:var(--blue-2);font-family:var(--mono);font-weight:600}
-.mtbl tr.total td{background:linear-gradient(180deg,var(--pink-soft),var(--bg));font-size:15px;padding:18px 18px;border-top:2px solid var(--pink);border-bottom:2px solid var(--pink)}
-.mtbl tr.total td.now{color:var(--ink)}
-.mtbl tr.total td.aaa{color:var(--pink-deep);font-size:16px;font-weight:700}
-.mtbl tr.total td.row-lbl{color:var(--ink);font-weight:700}
-.mtbl tr.save td{background:var(--blue-soft);color:var(--blue);font-weight:600}
-.mtbl tr.save td.row-lbl{color:var(--blue)}
-.mtbl tr.phase0 td{background:#F9F5FF}
-.mtbl tr.phase0 td.aaa{color:var(--purple);font-weight:700}
+/* math / value */
+.valuebar{background:linear-gradient(135deg,var(--pink),var(--pink-deep));border-radius:18px;padding:30px 32px;color:#fff;position:relative;overflow:hidden;box-shadow:0 12px 40px var(--pink-glow);margin-bottom:24px}
+.valuebar::after{content:'';position:absolute;top:-40px;right:-30px;width:180px;height:180px;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);border-radius:50%}
+.valuebar .k{font-family:var(--mono);font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:#FCD8E6;font-weight:600;margin-bottom:8px;position:relative}
+.valuebar .big{font-size:52px;font-weight:700;letter-spacing:-2px;line-height:1;margin-bottom:10px;position:relative}
+.valuebar .big small{font-size:15px;font-weight:500;font-family:var(--mono);opacity:.85;letter-spacing:.3px;margin-left:6px}
+.valuebar p{font-size:14px;color:#FBE3EC;line-height:1.6;position:relative;max-width:640px}
+.valuebar p b{color:#fff;font-weight:700}
+.vert{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;background:var(--bg);border:1px solid var(--line);border-radius:12px;transition:all .2s}
+.vert:hover{border-color:var(--purple-bright);transform:translateY(-2px);box-shadow:0 6px 16px rgba(135,73,198,.1)}
+.vert .ic{width:34px;height:34px;border-radius:9px;background:var(--purple-soft);color:var(--purple);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.vert .tx{line-height:1.35}
+.vert .tx .t{font-size:13.5px;font-weight:700;color:var(--ink);letter-spacing:-.2px}
+.vert .tx .d{font-size:11.5px;color:var(--body);margin-top:2px;line-height:1.45}
+.vert .tx .d b{color:var(--pink-deep)}
 
-.calc{background:linear-gradient(135deg,var(--pink),var(--blue-2));color:#fff;border-radius:16px;padding:30px 28px;margin:32px 0;position:relative;overflow:hidden;box-shadow:0 12px 40px rgba(230,56,120,.20)}
-.calc::before{content:'';position:absolute;top:-80px;right:-80px;width:220px;height:220px;background:radial-gradient(circle,rgba(255,255,255,.20),transparent 70%);pointer-events:none;border-radius:50%}
-.calc-h{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.85);text-transform:uppercase;font-weight:600;margin-bottom:6px;position:relative}
-.calc-t{font-family:var(--sans);font-size:24px;font-weight:700;color:#fff;margin-bottom:22px;position:relative;letter-spacing:-.4px;line-height:1.25}
-.calc-t em{font-style:italic;color:#FFE9F0;font-weight:500}
-.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;position:relative}
-@media(max-width:700px){.calc-grid{grid-template-columns:1fr}}
-.calc-in label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:1.4px;color:rgba(255,255,255,.75);text-transform:uppercase;font-weight:600;margin-bottom:10px}
-.calc-in input[type=range]{width:100%;accent-color:#fff}
-.calc-in .val{font-family:var(--sans);font-size:24px;color:#fff;font-weight:700;margin-top:4px;display:inline-block;margin-right:10px;letter-spacing:-.4px}
-.calc-in .val-sub{font-family:var(--mono);font-size:10.5px;color:rgba(255,255,255,.7);letter-spacing:.5px;font-weight:500}
-.calc-out{background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px 22px;backdrop-filter:blur(8px)}
-.calc-out .out-r{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.10);font-size:13px}
-.calc-out .out-r:last-child{border-bottom:none}
-.calc-out .out-r .k{color:rgba(255,255,255,.80);font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:500}
-.calc-out .out-r .v{color:#fff;font-family:var(--mono);font-weight:600;font-size:14px}
-.calc-out .out-r.hero{padding-top:14px;border-top:1px solid rgba(255,233,240,.35);margin-top:6px}
-.calc-out .out-r.hero .k{color:#FFE9F0;font-weight:600}
-.calc-out .out-r.hero .v{color:#fff;font-size:20px;font-family:var(--sans);font-weight:700}
+/* agents */
+.agent{background:linear-gradient(180deg,var(--bg),var(--bg-2));border:1.5px solid var(--line);border-radius:18px;padding:0;overflow:hidden;transition:all .25s;box-shadow:0 3px 14px rgba(44,30,110,.05)}
+.agent:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(44,30,110,.12)}
+.agent.a1{border-color:var(--pink-light)}
+.agent.a2{border-color:var(--blue-light)}
+.agent-top{padding:22px 24px 18px;position:relative}
+.agent.a1 .agent-top{background:linear-gradient(140deg,var(--pink-soft),transparent)}
+.agent.a2 .agent-top{background:linear-gradient(140deg,var(--blue-soft),transparent)}
+.agent-badge{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;padding:5px 11px;border-radius:16px;margin-bottom:13px}
+.agent.a1 .agent-badge{background:var(--pink);color:#fff}
+.agent.a2 .agent-badge{background:var(--blue);color:#fff}
+.agent .ico{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:13px;box-shadow:0 6px 16px rgba(44,30,110,.14)}
+.agent.a1 .ico{background:linear-gradient(135deg,var(--pink),var(--pink-deep))}
+.agent.a2 .ico{background:linear-gradient(135deg,var(--blue-light),var(--blue))}
+.agent .ico svg{width:27px;height:27px}
+.agent h4{font-size:21px;font-weight:700;color:var(--ink);letter-spacing:-.5px;margin-bottom:6px}
+.agent .role{font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--mute);font-weight:500}
+.agent-body{padding:6px 24px 24px}
+.agent-body .desc{font-size:14px;color:var(--body);line-height:1.6;margin-bottom:16px}
+.agent-body .desc b{color:var(--ink);font-weight:600}
+.agent ul{list-style:none;padding:0}
+.agent ul li{position:relative;padding-left:24px;margin-bottom:9px;font-size:13px;color:var(--body);line-height:1.5}
+.agent ul li::before{content:'';position:absolute;left:0;top:5px;width:14px;height:14px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 3px rgba(37,211,102,.16)}
+.agent ul li::after{content:'✓';position:absolute;left:2.5px;top:2px;color:#fff;font-size:9px;font-weight:700}
+.agent ul li b{color:var(--ink);font-weight:600}
+.agent .solves{margin:14px 0 0;padding:11px 14px;border-radius:10px;font-size:12px;font-weight:600;letter-spacing:.2px}
+.agent.a1 .solves{background:var(--pink-soft);color:var(--pink-deep)}
+.agent.a2 .solves{background:var(--blue-soft);color:var(--blue)}
 
-.pillbtn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;background:linear-gradient(135deg,var(--pink),var(--blue-2));color:#fff;font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;border-radius:12px;text-decoration:none;border:none;cursor:pointer;transition:all .2s;box-shadow:0 6px 20px var(--pink-glow)}
-.pillbtn:hover{transform:translateY(-2px);box-shadow:0 10px 28px var(--pink-glow);color:#fff}
-.pillbtn.ghost{background:var(--bg);color:var(--blue);border:1.5px solid var(--blue-light);box-shadow:none}
-.pillbtn.ghost:hover{background:var(--blue-soft);color:var(--blue)}
-.pillbtn.blue{background:linear-gradient(135deg,var(--blue-2),var(--blue));color:#fff;box-shadow:0 6px 20px rgba(44,30,110,.28)}
-.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+/* headaches solved */
+.hache{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:820px){.hache{grid-template-columns:1fr}}
+.hcard{border:1px solid var(--line);border-radius:16px;padding:26px 24px;background:var(--bg);position:relative;overflow:hidden}
+.hcard .pain{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:10px}
+.hcard .was{font-size:16px;color:var(--ink);font-weight:600;line-height:1.4;margin-bottom:16px;padding-bottom:16px;border-bottom:1px dashed var(--line)}
+.hcard .was em{color:var(--pink);font-style:italic;font-weight:500}
+.hcard .now-k{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--wa-deep);font-weight:700;margin-bottom:8px}
+.hcard .now{font-size:14px;color:var(--body);line-height:1.6}
+.hcard .now b{color:var(--ink);font-weight:600}
+.hcard::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.hcard.h1::before{background:linear-gradient(90deg,var(--pink),var(--purple))}
+.hcard.h2::before{background:linear-gradient(90deg,var(--blue-light),var(--blue))}
 
-.deliv{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
-.pill{font-family:var(--mono);font-size:9.5px;letter-spacing:.8px;padding:5px 10px;background:var(--blue-soft);color:var(--blue);border:1px solid var(--blue-light);border-radius:20px;font-weight:600}
-.pill.pink{background:var(--pink-soft);color:var(--pink);border-color:var(--pink-light)}
-.pill.purple{background:var(--purple-soft);color:var(--purple);border-color:#D6C1F0}
+.pillbtn{display:inline-flex;align-items:center;gap:9px;padding:15px 24px;background:var(--pink);color:#fff;font-family:var(--sans);font-size:14px;font-weight:600;letter-spacing:.2px;border-radius:11px;text-decoration:none;border:none;cursor:pointer;transition:all .2s;box-shadow:0 6px 18px var(--pink-glow)}
+.pillbtn:hover{background:var(--pink-deep);transform:translateY(-2px);color:#fff}
+.pillbtn.blue{background:var(--blue);box-shadow:0 6px 18px rgba(44,30,110,.2)}
+.pillbtn.blue:hover{background:var(--blue-2);color:#fff}
+.pillbtn.ghost{background:transparent;color:var(--blue);border:1.5px solid var(--line);box-shadow:none}
+.pillbtn.ghost:hover{background:var(--bg-2);color:var(--blue);border-color:var(--blue-light)}
+.pillbtn.wa{background:var(--wa);color:#0B1F1A;box-shadow:0 6px 18px rgba(37,211,102,.3)}
+.pillbtn.wa:hover{background:#2ee574;color:#0B1F1A}
 
-.warn-card{background:var(--bg);border:1px solid var(--line);border-left:4px solid var(--pink);border-radius:0 12px 12px 0;padding:20px 24px;margin:16px 0;box-shadow:0 2px 8px rgba(44,30,110,.04)}
-.warn-card.b{border-left-color:var(--blue-2)}
-.warn-card.p{border-left-color:var(--purple)}
-.warn-card h4{font-family:var(--sans);font-size:17px;color:var(--ink);margin-bottom:8px;font-weight:700}
-.warn-card h4::before{content:'◆';color:var(--pink);margin-right:8px}
-.warn-card.b h4::before{color:var(--blue-2)}
-.warn-card.p h4::before{color:var(--purple)}
-.warn-card p{font-size:14px;color:var(--body);line-height:1.65}
-.warn-card p b{color:var(--ink);font-weight:600}
-.warn-card p em{color:var(--purple);font-style:italic;font-weight:500}
+footer{border-top:1px solid var(--line);background:var(--bg-2);padding:40px 24px 30px;margin-top:20px;position:relative;z-index:2}
+.foot-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:22px;flex-wrap:wrap}
+.foot-brand .l{font-size:17px;font-weight:700;color:var(--blue);letter-spacing:-.4px}
+.foot-brand .l em{color:var(--pink);font-style:normal}
+.foot-brand .s{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:1px;text-transform:uppercase;margin-top:5px}
+.foot-legal{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.4px;max-width:1200px;margin:22px auto 0;text-align:center;line-height:1.7;border-top:1px solid var(--line);padding-top:18px}
 
-.invest-hero{background:linear-gradient(135deg,var(--pink),var(--blue-2));color:#fff;padding:28px 30px;border-radius:16px;margin:24px 0 8px;position:relative;overflow:hidden;box-shadow:0 12px 36px rgba(230,56,120,.22)}
-.invest-hero::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:rgba(255,255,255,.14);border-radius:50%}
-.invest-hero .k{font-family:var(--mono);font-size:10.5px;letter-spacing:1.6px;color:rgba(255,255,255,.80);text-transform:uppercase;font-weight:600;margin-bottom:6px;position:relative}
-.invest-hero .num{font-size:44px;font-weight:700;letter-spacing:-1.5px;line-height:1;margin:6px 0 10px;position:relative}
-.invest-hero .num small{font-size:16px;font-weight:500;opacity:.85;letter-spacing:.2px}
-.invest-hero .msg{font-size:15px;line-height:1.55;position:relative;max-width:680px}
-.invest-hero .msg b{color:#FFEBEB;font-weight:700}
-
-footer{border-top:1px solid var(--line);background:linear-gradient(180deg,var(--bg),var(--bg-2));padding:44px 24px 32px;margin-top:60px;position:relative;z-index:2}
-.foot-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
-.foot-brand{display:flex;flex-direction:column;gap:6px}
-.foot-brand .l{font-family:var(--sans);color:var(--blue);font-size:15px;font-weight:700}
-.foot-brand .l em{color:var(--pink);font-style:normal;padding:0 2px}
-.foot-brand .s{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:1px;text-transform:uppercase;font-weight:500}
-.foot-links{display:flex;gap:22px;font-family:var(--mono);font-size:11px;color:var(--body);letter-spacing:.4px;flex-wrap:wrap;font-weight:500}
-.foot-links a{color:var(--body);font-weight:500}
-.foot-links a:hover{color:var(--pink)}
-.foot-legal{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.4px;max-width:1200px;margin:24px auto 0;text-align:center;line-height:1.7;border-top:1px solid var(--line);padding-top:20px;font-weight:400}
-
-/* ==== DARK MODE · explicit overrides ==== */
-html.dark{
-  --bg:#0E0722; --bg-2:#160F31; --bg-3:#1F1642;
-  --line:#2E2450; --line-soft:#251C42;
-  --pink:#F5528F; --pink-bright:#FF7AAB; --pink-deep:#B02458; --pink-soft:rgba(245,82,143,.14); --pink-light:#F49BB8; --pink-glow:rgba(245,82,143,.35);
-  --blue:#8FA9E8; --blue-2:#6B8FE0; --blue-light:#5B7FE0; --blue-soft:rgba(107,143,224,.14);
-  --purple:#A78BFA; --purple-bright:#C4AEFF; --purple-soft:rgba(167,139,250,.14);
-  --ink:#F5F0FA; --body:#C0B8D5; --mute:#8B84A8; --mute-soft:#6E6788;
-  background-color:#0E0722;
-  color:#F5F0FA;
-}
-html.dark body{background-color:#0E0722;color:#F5F0FA}
-html.dark header{background:#0E0722;border-bottom-color:#2E2450}
-html.dark main{color:#F5F0FA}
-html.dark .h1,html.dark .h2,html.dark .h3,html.dark .card-title{color:#F5F0FA}
-html.dark .lead,html.dark .p,html.dark .card-body,html.dark ul.list li,html.dark .tl-p,html.dark .warn-card p{color:#C0B8D5}
-html.dark .card{background:linear-gradient(180deg,#160F31,#1F1642);border-color:#2E2450;box-shadow:0 4px 18px rgba(0,0,0,.35)}
-html.dark .card.pink{background:linear-gradient(180deg,rgba(245,82,143,.12),#160F31);border-color:rgba(245,82,143,.30)}
-html.dark .card.blue{background:linear-gradient(180deg,rgba(107,143,224,.12),#160F31);border-color:rgba(107,143,224,.30)}
-html.dark .card.purple{background:linear-gradient(180deg,rgba(167,139,250,.12),#160F31);border-color:rgba(167,139,250,.30)}
-html.dark .stat{background:#160F31;border-color:#2E2450}
-html.dark .stat.warn{background:linear-gradient(180deg,rgba(245,82,143,.12),#160F31);border-color:rgba(245,82,143,.30)}
-html.dark .stat.blue{background:linear-gradient(180deg,rgba(107,143,224,.12),#160F31);border-color:rgba(107,143,224,.30)}
-html.dark .stat.purple{background:linear-gradient(180deg,rgba(167,139,250,.12),#160F31);border-color:rgba(167,139,250,.30)}
-html.dark .stat .lbl{color:#8B84A8}
-html.dark .said{background:#160F31;border-color:#2E2450;border-left-color:#F5528F}
-html.dark .said .q{color:#F5F0FA}
-html.dark .said .from{color:#8B84A8}
-html.dark .means{background:rgba(107,143,224,.10);border-color:rgba(107,143,224,.30);color:#C0B8D5}
-html.dark .means b{color:#8FA9E8}
-html.dark .mtbl{background:#160F31;border-color:#2E2450}
-html.dark .mtbl th{background:#1F1642;color:#8B84A8;border-bottom-color:#2E2450}
-html.dark .mtbl td{border-bottom-color:#2E2450;color:#C0B8D5}
-html.dark .mtbl td.row-lbl{color:#C0B8D5}
-html.dark .mtbl tr.total td{background:rgba(245,82,143,.15);border-top-color:#F5528F;border-bottom-color:#F5528F}
-html.dark .mtbl tr.total td.row-lbl{color:#F5F0FA}
-html.dark .mtbl tr.total td.now{color:#F5F0FA}
-html.dark .mtbl tr.total td.aaa{color:#FF7AAB}
-html.dark .mtbl tr.phase0 td{background:rgba(167,139,250,.12)}
-html.dark .mtbl tr.phase0 td.aaa{color:#C4AEFF}
-html.dark .mtbl tr.save td{background:rgba(107,143,224,.15);color:#8FA9E8}
-html.dark .mtbl tr.save td.row-lbl{color:#8FA9E8}
-html.dark .warn-card{background:#160F31;border-color:#2E2450}
-html.dark .warn-card h4{color:#F5F0FA}
-html.dark .pillbtn.ghost{background:#160F31;color:#8FA9E8;border-color:rgba(107,143,224,.45)}
-html.dark .pillbtn.ghost:hover{background:rgba(107,143,224,.10)}
-html.dark .pill{background:rgba(107,143,224,.12);color:#8FA9E8;border-color:rgba(107,143,224,.30)}
-html.dark .pill.pink{background:rgba(245,82,143,.12);color:#F5528F;border-color:rgba(245,82,143,.30)}
-html.dark .pill.purple{background:rgba(167,139,250,.12);color:#A78BFA;border-color:rgba(167,139,250,.30)}
-html.dark .for-tag{background:rgba(245,82,143,.14);border-color:rgba(245,82,143,.40);color:#F5528F}
-html.dark .h1 .under{background:linear-gradient(180deg,transparent 60%,rgba(245,82,143,.20) 60%)}
-html.dark .brand-txt .n{color:#F5F0FA}
-html.dark .brand-txt .n em{color:#F5528F}
-html.dark .brand-txt .sub,html.dark .stamp{color:#8B84A8}
-html.dark .stamp b{color:#8FA9E8}
-html.dark .tab{color:#8B84A8}
-html.dark .tab:hover{color:#F5F0FA}
-html.dark .tab.active{color:#F5528F;background:linear-gradient(180deg,transparent 60%,rgba(245,82,143,.10))}
-html.dark .tab .n{color:#8FA9E8}
-html.dark .tl-item::before{background:#0E0722;border-color:#F5528F}
-html.dark .tl-item.done::before{background:#F5528F}
-html.dark .tl-item.b::before{border-color:#8FA9E8}
-html.dark .tl-item.b.done::before{background:#8FA9E8}
-html.dark .tl-tag{color:#F5528F}
-html.dark .tl-item.b .tl-tag{color:#8FA9E8}
-html.dark .tl-h{color:#F5F0FA}
-html.dark .eyebrow{color:#F5528F}
-html.dark .card-tag{color:#F5528F}
-html.dark .card-tag.b{color:#8FA9E8}
-html.dark .card-tag.p{color:#A78BFA}
-html.dark footer{background:linear-gradient(180deg,#0E0722,#160F31);border-top-color:#2E2450}
-html.dark .foot-brand .l{color:#8FA9E8}
-html.dark .foot-brand .l em{color:#F5528F}
-html.dark .foot-brand .s{color:#8B84A8}
-html.dark .foot-links a{color:#C0B8D5}
-html.dark .foot-links a:hover{color:#F5528F}
-html.dark .foot-legal{color:#8B84A8;border-top-color:#2E2450}
-html.dark .top-strip{background:#080418;border-bottom-color:#160F31}
-html.dark .shape.a{opacity:.20}
-html.dark .shape.b{opacity:.24}
-html.dark .shape.c{opacity:.16}
-
-/* ==== theme toggle ==== */
-.theme-tog{position:fixed;top:14px;right:20px;z-index:200;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;background:linear-gradient(135deg,var(--pink),var(--blue-2));color:#fff;font-family:var(--mono);font-size:10px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;border:none;border-radius:20px;cursor:pointer;box-shadow:0 6px 18px var(--pink-glow);transition:transform .2s}
-.theme-tog:hover{transform:translateY(-1px)}
-@media(max-width:900px){.theme-tog{top:auto;bottom:14px;right:14px}}
-
+/* floating chat widget */
+.fab{position:fixed;bottom:22px;right:22px;z-index:300;width:60px;height:60px;border-radius:50%;background:var(--wa);box-shadow:0 8px 24px rgba(37,211,102,.4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .2s;border:none}
+.fab:hover{transform:scale(1.06)}
+.fab svg{width:30px;height:30px}
+.fab .dot{position:absolute;top:-3px;right:-3px;width:20px;height:20px;border-radius:50%;background:var(--pink);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid #fff}
+.chatwin{position:fixed;bottom:94px;right:22px;z-index:300;width:340px;max-width:calc(100vw - 44px);background:var(--bg);border-radius:18px;box-shadow:0 20px 60px rgba(22,19,40,.28);border:1px solid var(--line);overflow:hidden;display:none;flex-direction:column;animation:slideup .3s ease}
+.chatwin.open{display:flex}
+@keyframes slideup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.cw-head{background:linear-gradient(135deg,var(--blue),var(--blue-2));padding:15px 18px;display:flex;align-items:center;gap:11px;color:#fff}
+.cw-head .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px}
+.cw-head .nm{font-size:14px;font-weight:700;flex:1}
+.cw-head .nm small{display:block;font-family:var(--mono);font-size:8.5px;color:#9FE3C4;font-weight:400;margin-top:2px}
+.cw-head .nm small::before{content:'●';color:var(--wa);margin-right:4px}
+.cw-head .x{background:rgba(255,255,255,.14);border:none;color:#fff;width:26px;height:26px;border-radius:7px;cursor:pointer;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center}
+.cw-body{padding:16px;background:var(--bg-2);flex:1;max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:9px}
+.cw-body .b{max-width:84%;padding:9px 13px;border-radius:13px;font-size:12.5px;line-height:1.45;animation:fadein .35s ease both}
+.cw-body .b.bot{background:#fff;color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.cw-body .b.bot b{color:var(--pink-deep)}
+.cw-body .b.usr{background:var(--blue);color:#fff;border-bottom-right-radius:4px;align-self:flex-end;font-weight:500}
+.cw-qr{padding:10px 14px;display:flex;gap:7px;flex-wrap:wrap;background:var(--bg-2);border-top:1px solid var(--line-soft)}
+.cw-qr button{font-size:11px;background:var(--pink-soft);border:1px solid var(--pink-light);color:var(--pink-deep);border-radius:15px;padding:6px 11px;font-weight:600;cursor:pointer;font-family:var(--sans);transition:all .15s}
+.cw-qr button:hover{background:var(--pink);color:#fff}
+.cw-foot{padding:11px 14px;border-top:1px solid var(--line);background:var(--bg)}
+.cw-foot a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#0B1F1A;font-weight:700;font-size:12.5px;padding:11px;border-radius:10px;text-decoration:none}
+.cw-foot a svg{width:17px;height:17px}
+.cw-note{font-family:var(--mono);font-size:8px;color:var(--mute);text-align:center;padding:7px 10px 9px;background:var(--bg);letter-spacing:.3px}
 </style>
 </head>
 <body>
 
-<button class="theme-tog" id="theme-tog" title="Toggle light/dark"><span id="theme-ico">◐</span><span id="theme-lbl">DARK</span></button>
 <div class="shape a"></div>
 <div class="shape b"></div>
 <div class="shape c"></div>
 
 <div class="top-strip" aria-hidden="true">
-  <div class="top-label">🇦🇺 The Situation</div>
+  <div class="top-label">◆ UNITREE FINANCE · ENGINE LIVE · DAY 1</div>
   <div class="top-window"><div class="top-track">
-    <span class="n"><span class="src">ADI SAID</span>Bottleneck: getting leads, talking to them, nurturing, liaising with lenders, closing.</span>
-    <span class="n"><span class="src">ADI SAID</span>If I disappear 14 days — I lose business.</span>
-    <span class="n"><span class="src">ADI SAID</span>Email list: 900+ contacts, no reverts.</span>
-    <span class="n"><span class="src">ADI SAID</span>I wish Google or FB actually worked.</span>
-    <span class="n"><span class="src">ADI SAID</span>Emails sometimes land in spam.</span>
-    <span class="n"><span class="src">ADI SAID</span>Clone me — for network, SEO, email marketing, cold calls.</span>
-    <span class="n"><span class="src">ADI SAID</span>15–20 leads/day, close 4–5/day — that's the win.</span>
-    <span class="n"><span class="src">STATUS</span>unitreefinance.online registered · Hostinger · warmup ready to start Day 1.</span>
+    <span class="n"><span class="src">LIVE</span>Your lead line is open — WhatsApp +61 481 823 600 · username Unitreefinance · chatbot catching enquiries 24/7.</span>
+    <span class="n"><span class="src">THE MATH</span>Every lead the engine catches and you convert ≈ A$2,000–A$3,000 in commission. The engine only has to land a few.</span>
+    <span class="n"><span class="src">TWO AGENTS</span>Lead Catcher never sleeps · Follow-Up Engine never forgets. Your two headaches — leads &amp; time — handled.</span>
+    <span class="n"><span class="src">EXPAND</span>Business loans today · equipment, commercial, vehicle, debtor &amp; SMSF finance next — same engine, more verticals, more profit.</span>
+    <span class="n"><span class="src">OWN IT</span>Every asset, prompt and number is yours. Founder-direct. Tailored at every meeting as we grow.</span>
   </div></div>
 </div>
 
@@ -332,501 +320,288 @@ html.dark .shape.c{opacity:.16}
     <div class="brand">
       <div class="brand-mark">U</div>
       <div class="brand-txt">
-        <span class="n">Unitree Finance <em>×</em> AAA by Artigellence</span>
-        <span class="sub">Growth Engine · Working Prototype · Founder-Direct</span>
+        <div class="n">Unitree Finance <em>×</em> AAA</div>
+        <div class="sub">Your Growth Engine · Live Activation</div>
       </div>
     </div>
-    <span class="for-tag">◆ Prepared for · Aditya Kumar</span>
     <div class="stamp">
-      Version 2 · <b>July 2026</b><br>
-      Confidential · NDA-covered
+      Day 1 · <b>Prepared for Aditya Kumar</b><br>
+      Lead line <span class="live">Live now</span> · WhatsApp +61 481 823 600<br>
+      unitreefinance.online · founder-direct
     </div>
   </div>
-  <nav class="tabs" role="tablist">
-    <button class="tab active" data-tab="insight" role="tab"><span class="n">01</span>The Insight</button>
-    <button class="tab" data-tab="phase0" role="tab"><span class="n">02</span>Phase 0</button>
-    <button class="tab" data-tab="build" role="tab"><span class="n">03</span>Build &amp; Retainer</button>
-    <button class="tab" data-tab="math" role="tab"><span class="n">04</span>The Math</button>
-    <button class="tab" data-tab="ads" role="tab"><span class="n">05</span>Ad Rebalance</button>
-    <button class="tab" data-tab="compliance" role="tab"><span class="n">06</span>Compliance</button>
-    <button class="tab" data-tab="yes" role="tab"><span class="n">07</span>Yes → Start</button>
-  </nav>
 </header>
 
 <main>
 
-<section class="panel active" id="insight">
-  <div class="eyebrow">§ 01 <span class="dot">·</span> The Insight <span class="dot">·</span> Your Own Words, Read Back</div>
-  <h1 class="h1">You're not <em>under-distributing</em>.<br>You're <em>under-attributing</em> — and <span class="under">invisible to AI</span>.</h1>
-  <p class="lead">Adi, this isn't a template. Every line below comes from the intake you filled — cross-referenced with a live read of unitreefinance.com.au and your public footprint. The diagnosis is in your own words. The plan then follows.</p>
-
-  <h2 class="h2">What you told me</h2>
-  <div class="grid-2">
-    <div>
-      <div class="said"><div class="q">Commercial Finance Broker.</div><div class="from"><b>Q01</b> · What the business does</div></div>
-      <div class="said"><div class="q">Systems.</div><div class="from"><b>Q04</b> · Single biggest constraint</div></div>
-      <div class="said"><div class="q">15–20 hrs a week on admin, content, marketing, talking to clients.</div><div class="from"><b>Q05–Q06</b> · The time drain</div></div>
-      <div class="said"><div class="q">Getting leads, talking to them, nurturing, liaising with lenders, closing the deal.</div><div class="from"><b>Q07</b> · Where the bottleneck sits</div></div>
-      <div class="said"><div class="q">I lose business.</div><div class="from"><b>Q08</b> · If you disappear 14 days</div></div>
-    </div>
-    <div>
-      <div class="said"><div class="q">50–60% still done manually.</div><div class="from"><b>Q11</b> · Manual servicing &amp; compliance</div></div>
-      <div class="said"><div class="q">Clone me — for network, SEO, email marketing, cold calls.</div><div class="from"><b>Q12</b> · If you could clone one person</div></div>
-      <div class="said"><div class="q">Basic SEO only. Not sure what AEO / GEO is.</div><div class="from"><b>Q19</b> · Where you stand on Findable</div></div>
-      <div class="said"><div class="q">Sometimes spam.</div><div class="from"><b>Q20</b> · Where your emails land</div></div>
-      <div class="said"><div class="q">Over 900 contacts, but no reverts.</div><div class="from"><b>Q23</b> · Your email list</div></div>
-      <div class="said"><div class="q">My India team creates and posts. I wish Google or FB actually worked.</div><div class="from"><b>Q24</b> · Who posts, and what you wish worked</div></div>
-      <div class="said"><div class="q">15–20 relevant leads per day, closing 4–5 per day.</div><div class="from"><b>Q27</b> · Your 12-month clear win</div></div>
-    </div>
-  </div>
-
-  <h2 class="h2">What it <em>actually</em> means</h2>
-  <div class="stats">
-    <div class="stat warn"><div class="big">7</div><div class="lbl">Channels active daily · with no attribution loop</div></div>
-    <div class="stat warn"><div class="big">900+</div><div class="lbl">Contacts sitting dead · zero replies</div></div>
-    <div class="stat blue"><div class="big">3+</div><div class="lbl">Leads/day landing · target 15–20</div></div>
-    <div class="stat warn"><div class="big">$2K</div><div class="lbl">Profit per matured lead · walking off every missed call</div></div>
-  </div>
-
-  <div class="means"><b>The Diagnosis</b>
-    You post daily on seven channels with a team you can't measure. You spend A$4,500/month on agency + ads. You get 3+ leads a day — but your USP is a 24–72hr close, and the first touch has no system behind it. Your list is dead. Your emails half-land. ChatGPT, Claude and Perplexity can't answer <em>"who is Unitree Finance?"</em> accurately. Every missed call is a $2,000 walk-off. This isn't a distribution problem — it's a <b>compounding leak</b>.
-  </div>
-
-  <h2 class="h2">The <em>six</em> leaks — and what closes them</h2>
-  <div class="grid-3">
-    <div class="card pink">
-      <div class="card-tag">Leak 01 · Missed calls</div>
-      <div class="card-title">Voice Agent, 24/7</div>
-      <div class="card-body">Every after-hours + missed call answered, loan type &amp; amount qualified, calendar booked, transcript to WhatsApp. <b>Zero $2K walk-offs.</b></div>
-    </div>
-    <div class="card pink">
-      <div class="card-tag">Leak 02 · Slow first touch</div>
-      <div class="card-title">60-Second Response Agent</div>
-      <div class="card-body">Every form fill → SMS + email inside <b>60 seconds</b>. Your USP is speed of close — the first touch has to match.</div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Leak 03 · Invisible to AI</div>
-      <div class="card-title">Findable Layer</div>
-      <div class="card-body">llms.txt, FinancialService + LocalBusiness schema (Parramatta &amp; Adelaide), FAQ schema on loan-type questions. Read correctly by <b>ChatGPT, Claude, Perplexity &amp; Google AI</b>.</div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Leak 04 · Email in spam</div>
-      <div class="card-title">Deliverability + Cousin Domain</div>
-      <div class="card-body">SPF / DKIM / DMARC on unitreefinance.com.au. <b>unitreefinance.online</b> (Hostinger ✓ done) warmed for outbound. Quotes land in <b>the inbox</b>.</div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">Leak 05 · Spray with no signal</div>
-      <div class="card-title">Attribution Dashboard</div>
-      <div class="card-body">Every post, every ad, every email tagged. Leads → source → matured → $$ visible daily. Kill what doesn't attribute; double what does.</div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">Leak 06 · You are the business</div>
-      <div class="card-title">Digital Clone GPT · <em>trained on you</em></div>
-      <div class="card-body">Your voice, your objection-handling, your loan know-how — a GPT trained on you, drafting responses, posts &amp; emails in your voice. The clone you asked for.</div>
-    </div>
-  </div>
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="phase0">See Phase 0 →</button>
-    <button class="pillbtn ghost" data-goto="math">Skip to The Math</button>
+<!-- HERO -->
+<section class="hero">
+  <div class="badge">Engine live · Day 1</div>
+  <h1 class="h1">Adi — your engine is <em>on.</em><br>Now it catches the <span class="under">leads</span><br>and hands you back your <span class="under">time.</span></h1>
+  <p class="lead">You told us the two things that hurt: <strong>not enough leads</strong>, and <strong>no time</strong> — business slips away while you're on a deal, on a call, or asleep. This page is the fix, working. Below: five things the engine ships for you, your live lead line, the honest money math, and the <em>two agents</em> that carry the weight so you don't have to. <strong>Every lead it catches is worth A$2,000–A$3,000 to you. It only has to land a few.</strong></p>
+  <div class="hero-cta">
+    <a class="pillbtn wa" href="https://wa.me/61481823600?text=Hi%20Unitree%20Finance%20-%20I%27d%20like%20to%20talk%20about%20business%20funding." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#0B1F1A"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.6 4.1.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+      Chat on WhatsApp
+    </a>
+    <a class="pillbtn ghost" href="#leadline">See how it works ↓</a>
   </div>
 </section>
 
-<section class="panel" id="phase0">
-  <div class="eyebrow">§ 02 <span class="dot">·</span> Phase 0 <span class="dot">·</span> Diagnostic &amp; First Working Result</div>
-  <h1 class="h1">Phase 0 is <em>on me</em>.<br>By Day 10, a working <span class="under">Voice Agent</span> is live on your line.</h1>
-  <p class="lead">The engagement starts with a <strong>A$4,500 Phase 0</strong> — a one-time fee, paid at start, that comes with a <strong>100% refundable assurance up to Day 30</strong>. I shadow the business, deliver a first working result on your real data by Day 10, and you decide between Day 10 and Day 30 whether to continue — or take a full refund. <em>Risk sits on me. Scope stays alive — we tailor whatever's needed at each meeting, as we progress.</em></p>
+<!-- 1 · WHAT THE ENGINE SHIPS -->
+<section class="section" id="ships">
+  <div class="eyebrow"><span class="num">01</span> <span class="dot">◆</span> What the engine ships for you</div>
+  <h2 class="h2">Five things it makes — <span class="b">on repeat, in your name.</span></h2>
+  <p class="sec-sub">These are <strong>sample mockups</strong> — the shape of what the engine produces every week so Unitree shows up everywhere a business owner looks for funding. <em>Swap the words for your real deals; the machine does the rest.</em></p>
 
-  <div class="stats">
-    <div class="stat blue"><div class="big">A$4,500</div><div class="lbl">Phase 0 · one-time · at start</div></div>
-    <div class="stat purple"><div class="big">100%</div><div class="lbl">Refundable up to Day 30 · no questions</div></div>
-    <div class="stat blue"><div class="big">Day 10</div><div class="lbl">First working result live on your data</div></div>
-    <div class="stat purple"><div class="big">Founder-<br>direct</div><div class="lbl">Every meeting · every phase · every tier</div></div>
-  </div>
-
-  <h2 class="h2">What lands in Phase 0</h2>
-  <div class="grid-2">
-    <div class="card pink">
-      <div class="card-tag">Hero deliverable · The First Working Result</div>
-      <div class="card-title">Voice Agent live on 0481 823 600</div>
-      <div class="card-body">
-        A working AI voice agent live on your business line by <b>Day 10</b>. Handles after-hours and missed calls. Qualifies loan type / amount / urgency. Books calendar slots. Sends transcripts to your WhatsApp. Won't quote rates or approve loans — captures, qualifies, books, hands off. <b>The moment you hear it take a real call and book a real lead — that's when the plan becomes obvious.</b>
-      </div>
-      <div class="deliv"><span class="pill pink">Live Day 10</span><span class="pill pink">Founder-built</span><span class="pill pink">ASIC-safe scope</span><span class="pill pink">Yours to keep</span></div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">Add-on · You asked for this literally</div>
-      <div class="card-title">Digital Clone GPT v1 · <em>trained on Adi</em></div>
-      <div class="card-body">
-        A private GPT trained on your voice recording, your top objections, your loan know-how. Drafts responses, posts, emails, follow-ups <b>in your voice</b>. The <em>"clone me"</em> you wrote in Q12. Ships in Phase 0; deepens with more data through Build.
-      </div>
-      <div class="deliv"><span class="pill purple">v1 in Phase 0</span><span class="pill purple">v2 by Month 3</span><span class="pill purple">Your private GPT</span></div>
-    </div>
-  </div>
-
-  <h2 class="h2">The invisible fortnight — every foundation piece</h2>
-  <div class="timeline">
-    <div class="tl-item done">
-      <div class="tl-tag">Day 1</div>
-      <div class="tl-h">Saturday kickoff · 90 minutes</div>
-      <div class="tl-p">Logins together (Zoho, aggregators, Google Business, socials). Cousin domain already registered — <b>unitreefinance.online</b> (via Hostinger, ✓ done). Warmup clock starts. Ideal client sentence locked (my read: fast-track commercial + low-doc, 24–72hr close, tradies &amp; SMB operators). Voice capture — 30–40 minutes of you talking loans, deals, wins. <b>Everything I write for you, forever, runs from this recording.</b></div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-tag">Days 1–3</div>
-      <div class="tl-h">Findable Diagnostic delivered</div>
-      <div class="tl-p">6-point written audit: where Unitree lives in ChatGPT/Claude/Perplexity/Google AI today (baselined with screenshots), SPF/DKIM/DMARC status, schema audit, GBP audit both offices, "sometimes spam" root cause, attribution audit across your 7 channels. Plain English. Decision-ready.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-tag">Days 1–14</div>
-      <div class="tl-h">unitreefinance.online warmup begins · <em>the clock that cannot be rushed</em></div>
-      <div class="tl-p"><b>unitreefinance.online</b> (already registered via Hostinger) is your outbound-only address. Specialist warmup software behaves like a real person for 2–4 weeks so it lands in inboxes, not spam. Your main <b>unitreefinance.com.au</b> is never put at risk. This clock started the day the domain was booked.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-tag">Days 3–7</div>
-      <div class="tl-h">900-contact list cleaned</div>
-      <div class="tl-p">A list this age typically carries 15–30% dead addresses. Sending to dead addresses tells Gmail "this sender doesn't know his own contacts" — and your good emails start missing inboxes too. Cleaning removes the dead weight first. <b>A smaller alive list beats a big dead one every time.</b></div>
-    </div>
-    <div class="tl-item b">
-      <div class="tl-tag">Day 10</div>
-      <div class="tl-h">🎯 First Working Result: Voice Agent LIVE</div>
-      <div class="tl-p">Voice Agent answering your missed calls. Digital Clone GPT v1 in your hands. You hear the machine take a real inbound and book it. <b>This is the moment.</b></div>
-    </div>
-    <div class="tl-item b">
-      <div class="tl-tag">Days 10–30</div>
-      <div class="tl-h">Refund window open · your call</div>
-      <div class="tl-p">Between Day 10 and Day 30 you decide: continue into Build &amp; Retainer — or full refund of A$4,500. <b>No questions.</b></div>
-    </div>
-  </div>
-
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="build">See Build &amp; Retainer →</button>
-  </div>
-</section>
-
-<section class="panel" id="build">
-  <div class="eyebrow">§ 03 <span class="dot">·</span> Build &amp; Retainer <span class="dot">·</span> The Growth Engine, Tailored</div>
-  <h1 class="h1">A$2,000 a month.<br>Six agents. A weekly engine. <em>Assets you own forever.</em></h1>
-  <p class="lead">A <strong>tailored retainer for Unitree</strong> — sized to your revenue band today with room for you to scale into what you actually asked for: <em>15–20 leads a day, 4–5 closes a day.</em> Direct founder access, every meeting. 3-month break clause. You keep the code, the prompts, the credentials. <em>We tailor whatever's needed at each meeting, as we progress</em> — the plan flexes to what your business asks for.</p>
-
-  <div class="stats">
-    <div class="stat blue"><div class="big">A$2,000</div><div class="lbl">Monthly · Months 1–6</div></div>
-    <div class="stat purple"><div class="big">6</div><div class="lbl">Agents · rolled out progressively</div></div>
-    <div class="stat blue"><div class="big">4h/wk</div><div class="lbl">Weekly Growth Engine session · everything shipped</div></div>
-    <div class="stat purple"><div class="big">3 mo</div><div class="lbl">Break clause · walk away, keep what's built</div></div>
-  </div>
-
-  <h2 class="h2">The <em>six agents</em>, in the order they land</h2>
   <div class="grid-3">
-    <div class="card pink">
-      <div class="card-tag">Agent 01 · Phase 0 delivered</div>
-      <div class="card-title">Voice Agent</div>
-      <div class="card-body">Kept live, tuned monthly. New scripts as new loan products land. <b>Zero missed leads.</b></div>
-    </div>
-    <div class="card pink">
-      <div class="card-tag">Agent 02 · Month 1</div>
-      <div class="card-title">60-Second Response Agent</div>
-      <div class="card-body">Every form fill → SMS + email in 60s. Studies show first-touch inside 5 minutes converts <b>9× higher</b>. You'll be at 1 minute.</div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Agent 03 · Month 2</div>
-      <div class="card-title">Attribution Dashboard</div>
-      <div class="card-body">Every post/ad/email UTM-tagged. Live view: <b>lead → source → conversation → matured → $$</b>. Finally proves what your India team's daily posts are doing.</div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Agent 04 · Month 2</div>
-      <div class="card-title">Findable Layer</div>
-      <div class="card-body">llms.txt, FinancialService + LocalBusiness×2 schema, FAQ schema on top loan-type queries, weekly GBP posts both offices. AI answers <em>"who is Unitree"</em> <b>correctly</b>.</div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">Agent 05 · Month 3</div>
-      <div class="card-title">Referral Partner Nurture</div>
-      <div class="card-body">Monthly co-brandable content to accountants, business advisers, tax agents — the people who send the <b>real $2K matured leads</b>. B2B effort, B2C reach.</div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">Agent 06 · Month 3+</div>
-      <div class="card-title">Digital Clone GPT v2</div>
-      <div class="card-body">Trained on months of your content, transcripts, emails. Drafts most of your inbound replies and outbound in your voice. The <em>clone</em> at scale.</div>
-    </div>
-  </div>
-
-  <h2 class="h2">The Weekly Growth Engine · <em>underneath every agent</em></h2>
-  <div class="p">One 4-hour session a week. Everything flows from one anchor piece — nothing is written twice:</div>
-  <div class="grid-4">
-    <div class="card">
-      <div class="card-tag b">Hour 1 · The anchor</div>
-      <div class="card-title" style="font-size:16px">One 600–1,000 word article</div>
-      <div class="card-body">In your voice. Market read, cash-flow explainer, deal case, ATO deadline. → Unitree blog + saved for newsletter.</div>
-    </div>
-    <div class="card">
-      <div class="card-tag b">Hour 2 · Native cuts + reviews repurposed</div>
-      <div class="card-title" style="font-size:16px">LinkedIn · FB · X · Reddit</div>
-      <div class="card-body">Article cut into platform-native posts. LinkedIn = your professional network. FB = SMB owners. <b>Your Google reviews harvested and repurposed</b> — quote cards, video overlays, GBP posts. Your best trust asset, finally working.</div>
-    </div>
-    <div class="card">
-      <div class="card-tag b">Hour 3 · One vertical video</div>
-      <div class="card-title" style="font-size:16px">30–60s · Reels · TikTok · Shorts</div>
-      <div class="card-body">Faceless — data, charts, captions, voiceover. You never need to be on camera. Same script feeds podcast later.</div>
-    </div>
-    <div class="card">
-      <div class="card-tag b">Hour 4 · Schedule &amp; report</div>
-      <div class="card-title" style="font-size:16px">Attribution + WhatsApp signoff</div>
-      <div class="card-body">Everything scheduled. Last week's numbers pulled. WhatsApp goes to you: <em>reply "OK" or mark changes.</em> 2 min, before Monday.</div>
-    </div>
-  </div>
-
-  <h2 class="h2">What unlocks as you grow</h2>
-  <ul class="list blue">
-    <li><b>At 100+ followers on any channel · gated milestone, Month 4–5</b> — the weekly faceless podcast (<em>"24–72 Hours" or "Fast Finance"</em>). Audio drawn from the video scripts — near-zero extra effort, big authority signal. Not before: <b>a podcast with no audience is a diary.</b></li>
-    <li><b>Referral partner monthly track</b> — one email/month to your accountant &amp; adviser network with co-brandable content. Each activated partner puts Unitree in front of more SMB owners than a week of posting.</li>
-    <li><b>Ad rebalance</b> — see Tab 05. Your $3K/mo spend gets tighter and cheaper as organic proves.</li>
-    <li><b>If paid ads scale later</b> — separate conversation, separate budget, only once organic proves what messages convert. <b>Not in this scope</b> — flagging now so it's never a surprise.</li>
-  </ul>
-
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="math">See The Math →</button>
-  </div>
-</section>
-
-<section class="panel" id="math">
-  <div class="eyebrow">§ 04 <span class="dot">·</span> The Math <span class="dot">·</span> Money On The Table Only When You See Results</div>
-  <h1 class="h1">Same monthly outlay as today.<br><span class="under">Plus you own the engine.</span></h1>
-  <p class="lead">Two numbers to keep separate: <strong>A$4,500 is your Phase 0 fee — one-time, 100% refundable</strong>. Your <strong>monthly outlay</strong> with AAA is A$3,000 (A$2,000 retainer + A$1,000 phased ads) — down from your current A$4,500/month (A$1,500 agency + A$3,000 ads). You save A$1,500/month, AND you own the code, the prompts, the credentials, the content, the cleaned list, and the Digital Clone GPT — forever.</p>
-
-  <div class="invest-hero">
-    <div class="k">◆ The AAA Investment</div>
-    <div class="num">A$4,500 <small>· Phase 0 · once</small></div>
-    <div class="msg"><b>100% refundable up to Day 30.</b> Then <b>A$2,000/month retainer</b> for six months. That's it — no hidden fees, no surprises. Your ~$100/month tools pass through at cost (no markup) on your card.</div>
-  </div>
-
-  <h2 class="h2">Your current monthly spend <em>versus</em> AAA · line by line</h2>
-  <table class="mtbl">
-    <thead>
-      <tr><th>Line item</th><th style="text-align:right">Now (as you told me)</th><th style="text-align:right">With AAA</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="row-lbl">Agency (marketing)</td><td class="now" style="text-align:right">A$1,500 / mo</td><td class="aaa" style="text-align:right">—</td></tr>
-      <tr><td class="row-lbl">Ad spend</td><td class="now" style="text-align:right">A$3,000 / mo</td><td class="aaa" style="text-align:right">A$1,000 / mo (phased)</td></tr>
-      <tr><td class="row-lbl">AAA retainer</td><td class="now" style="text-align:right">—</td><td class="aaa" style="text-align:right">A$2,000 / mo</td></tr>
-      <tr class="total"><td class="row-lbl">MONTHLY OUTLAY</td><td class="now" style="text-align:right">A$4,500 / mo</td><td class="aaa" style="text-align:right">A$3,000 / mo</td></tr>
-      <tr><td class="row-lbl">6-month monthly total</td><td class="now" style="text-align:right">A$27,000</td><td class="aaa" style="text-align:right">A$18,000</td></tr>
-      <tr class="phase0"><td class="row-lbl">Phase 0 (one-time · refundable)</td><td style="text-align:right">—</td><td class="aaa" style="text-align:right">A$4,500 <span style="font-size:10px;color:var(--purple);text-transform:uppercase;letter-spacing:1px;font-weight:600">· refundable</span></td></tr>
-      <tr class="total"><td class="row-lbl">6-MONTH ALL-IN</td><td class="now" style="text-align:right">A$27,000</td><td class="aaa" style="text-align:right">A$22,500</td></tr>
-      <tr class="save"><td class="row-lbl">💰 Savings vs today</td><td style="text-align:right">—</td><td style="text-align:right">A$4,500 saved</td></tr>
-    </tbody>
-  </table>
-
-  <h2 class="h2">What you own at Month 6 · <em>none of this is on your balance sheet today</em></h2>
-  <div class="grid-3">
-    <div class="card pink">
-      <div class="card-tag">Systems</div>
-      <div class="card-title">6 Agents, live</div>
-      <div class="card-body">Voice Agent · 60-Second Response · Attribution Dashboard · Findable Layer · Referral Nurture · Digital Clone GPT v2. Your code, your credentials.</div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Content</div>
-      <div class="card-title">~24 anchor articles</div>
-      <div class="card-body">Each cut into 4–5 platform-native posts + 1 vertical video. That's <b>~120+ pieces of content</b> ranking, tagged, attributable — plus a monthly newsletter library.</div>
-    </div>
-    <div class="card purple">
-      <div class="card-tag p">List &amp; audience</div>
-      <div class="card-title">A cleaned, warmed, replying list</div>
-      <div class="card-body">Your 900 contacts, cleaned + growing. An audience across the channels that actually convert. Referral partners on a monthly touch. <em>An engine that keeps working while you sleep.</em></div>
-    </div>
-  </div>
-
-  <div class="calc">
-    <div class="calc-h">◆ ROI Calculator · Slide it, see it</div>
-    <div class="calc-t">If AAA moves you from 3+ leads/day to your <em>target</em>, here's what it earns.</div>
-    <div class="calc-grid">
-      <div>
-        <div class="calc-in" style="margin-bottom:22px">
-          <label>Matured leads / month</label>
-          <input type="range" id="r-mat" min="3" max="60" value="10" step="1">
-          <span class="val" id="v-mat">10</span><span class="val-sub">closes / month</span>
-        </div>
-        <div class="calc-in" style="margin-bottom:22px">
-          <label>Profit per matured lead</label>
-          <input type="range" id="r-per" min="1500" max="4000" value="2000" step="100">
-          <span class="val" id="v-per">A$2,000</span><span class="val-sub">your stated number</span>
-        </div>
-        <div class="calc-in">
-          <label>Monthly outlay (retainer + phased ads)</label>
-          <input type="range" id="r-cost" min="2000" max="4500" value="3000" step="250">
-          <span class="val" id="v-cost">A$3,000</span><span class="val-sub">from Month 2</span>
+    <!-- ex1 landing -->
+    <div class="ex">
+      <div class="ex-head"><span class="lbl">◆ Lead-magnet page</span><span class="n">01</span></div>
+      <div class="ex-body">
+        <span class="sample-flag">Sample</span>
+        <div class="mk-land">
+          <div class="kick">Unsecured · Low-doc · Fast</div>
+          <h5>$50k–$500k in your account in <em>48 hours.</em></h5>
+          <p>No property security. Minimal paperwork. Answer in one business day — from a broker, not a call centre.</p>
+          <span class="btn">Check my eligibility →</span>
         </div>
       </div>
-      <div class="calc-out">
-        <div class="out-r"><span class="k">Monthly revenue</span><span class="v" id="o-rev">A$20,000</span></div>
-        <div class="out-r"><span class="k">Monthly outlay</span><span class="v" id="o-cost">A$3,000</span></div>
-        <div class="out-r"><span class="k">Monthly net</span><span class="v" id="o-net">A$17,000</span></div>
-        <div class="out-r"><span class="k">6-month net</span><span class="v" id="o-6m">A$102,000</span></div>
-        <div class="out-r hero"><span class="k">Return on outlay</span><span class="v" id="o-roi">5.7×</span></div>
+      <div class="ex-cap"><b>A landing page</b> that turns an ad click or Google visit into a booked, qualified enquiry.</div>
+    </div>
+    <!-- ex2 social -->
+    <div class="ex">
+      <div class="ex-head"><span class="lbl">◆ Social post</span><span class="n">02</span></div>
+      <div class="ex-body">
+        <span class="sample-flag">Sample</span>
+        <div class="mk-social">
+          <div class="row"><div class="av"></div><div class="who">Unitree Finance<small>@unitreefinance · 2h</small></div></div>
+          <div class="post">3 signs your business is ready for growth funding — and <b>not one of them is "you're desperate."</b> Cashflow gaps ≠ failure. Here's how smart owners use short-term funding to grow 👇</div>
+          <div class="tags">#businessloans #smallbusinessAU #cashflow</div>
+          <div class="eng"><span>♡ 142</span><span>↻ 28</span><span>💬 19</span></div>
+        </div>
+      </div>
+      <div class="ex-cap"><b>Weekly posts</b> that build authority and pull warm enquiries from LinkedIn, Insta &amp; Facebook.</div>
+    </div>
+    <!-- ex3 email -->
+    <div class="ex">
+      <div class="ex-head"><span class="lbl">◆ Follow-up email</span><span class="n">03</span></div>
+      <div class="ex-body">
+        <span class="sample-flag">Sample</span>
+        <div class="mk-mail">
+          <div class="subj">Quick one, {First Name} — still need the funding?</div>
+          <div class="meta">Unitree Finance · to you · Day 2 of nurture</div>
+          <div class="ln">Hi {First Name}, you checked your eligibility on Tuesday but we didn't get to chat.</div>
+          <div class="ln"><b>Good news:</b> based on what you shared, a low-doc facility looks very doable. Want me to line up a lender match this week?</div>
+          <span class="cta">Book a 10-min call →</span>
+        </div>
+      </div>
+      <div class="ex-cap"><b>Auto nurture</b> that chases every enquiry so warm leads never go cold on you.</div>
+    </div>
+    <!-- ex4 review -->
+    <div class="ex">
+      <div class="ex-head"><span class="lbl">◆ Review → content</span><span class="n">04</span></div>
+      <div class="ex-body">
+        <span class="sample-flag">Sample</span>
+        <div class="mk-rev">
+          <div class="stars">★★★★★</div>
+          <div class="quote">"Adi got our café $80k in 3 days when two banks said no. Actually picked up the phone. Legend."</div>
+          <div class="by">— M. Tran <span>· Café owner, Parramatta</span></div>
+        </div>
+      </div>
+      <div class="ex-cap"><b>Every 5-star review</b> becomes a quote card, a post, and proof on your site — trust that sells for you.</div>
+    </div>
+    <!-- ex5 AI answer -->
+    <div class="ex">
+      <div class="ex-head"><span class="lbl">◆ AI-answer snippet</span><span class="n">05</span></div>
+      <div class="ex-body">
+        <span class="sample-flag">Sample</span>
+        <div class="mk-ai">
+          <div class="q"><div class="ic">?</div><div class="t">"Who's a fast business loan broker in Australia for low-doc funding?"</div></div>
+          <div class="a"><div class="ic">✦</div><div class="t">A strong option is <b>Unitree Finance</b> — an Australia-wide broker specialising in fast, low-doc and unsecured business loans, known for same-day answers…</div></div>
+        </div>
+      </div>
+      <div class="ex-cap"><b>The Findable layer</b> so ChatGPT, Google &amp; Perplexity name Unitree when owners ask for a broker.</div>
+    </div>
+    <!-- testimonial capability card -->
+    <div class="ex" style="border-color:var(--purple-bright)">
+      <div class="ex-head"><span class="lbl" style="color:var(--purple)">◆ Testimonial engine</span><span class="n">+1</span></div>
+      <div class="ex-body" style="display:flex;align-items:center;justify-content:center;padding:20px;background:linear-gradient(160deg,var(--purple-soft),var(--bg))">
+        <div style="text-align:center">
+          <div style="font-size:30px;margin-bottom:6px">★★★★★</div>
+          <div style="font-size:13px;font-weight:600;color:var(--ink);line-height:1.4">Collect · design · publish<br>every happy client into<br><span style="color:var(--purple)">social proof that compounds.</span></div>
+        </div>
+      </div>
+      <div class="ex-cap">Reviews requested automatically after every settled deal — <b>your reputation, working while you sleep.</b></div>
+    </div>
+  </div>
+
+  <!-- Big testimonial -->
+  <div class="testi">
+    <span class="flag">Sample testimonial · swap for a real one</span>
+    <div class="q">"I used to lose deals just because I couldn't get back to people fast enough. Now the engine catches them, warms them up, and I walk into a booked call already half-closed. <em>Best decision I made this year.</em>"</div>
+    <div class="by">
+      <div class="av"></div>
+      <div class="who">Aditya Kumar<small>Director · Unitree Finance</small></div>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · LEAD LINE -->
+<section class="section" id="leadline">
+  <div class="eyebrow"><span class="num">02</span> <span class="dot">◆</span> Your lead line — open now</div>
+  <h2 class="h2">One number. One username.<br><span class="b">Every enquiry caught, day or night.</span></h2>
+  <p class="sec-sub">This is the fix for headache #1. A business owner can reach you three ways — and the <strong>chatbot answers instantly</strong>, qualifies them, and books the call straight into your calendar. <em>You reply when you're free; the lead never goes cold.</em></p>
+
+  <div class="leadbox">
+    <div class="leadbox-grid">
+      <div class="leadbox-l">
+        <div class="k">Live &amp; connected</div>
+        <h3>Your 24/7 <em>lead catcher</em> is on the line.</h3>
+        <p>WhatsApp, the username, or the website chat — all feed one place, all answered in seconds, all booked to you.</p>
+
+        <div class="leadrow">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.6 4.1.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></div>
+          <div class="tx"><div class="lb">WhatsApp</div><div class="vl">+61 481 823 600</div></div>
+          <div class="cp" data-copy="+61 481 823 600">copy</div>
+        </div>
+        <div class="leadrow">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg></div>
+          <div class="tx"><div class="lb">Username</div><div class="vl">Unitreefinance</div></div>
+          <div class="cp" data-copy="Unitreefinance">copy</div>
+        </div>
+        <div class="leadrow">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linejoin="round"/></svg></div>
+          <div class="tx"><div class="lb">Website chatbot</div><div class="vl">Bottom-right, this page →</div></div>
+          <div class="cp" onclick="openChat()">try it</div>
+        </div>
+
+        <a class="wa-btn" href="https://wa.me/61481823600?text=Hi%20Unitree%20Finance%20-%20I%27d%20like%20to%20talk%20about%20business%20funding." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="#0B1F1A"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.6 4.1.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+          Open WhatsApp now
+        </a>
+      </div>
+
+      <div class="leadbox-r">
+        <div class="chatprev-head">
+          <div class="av">U</div>
+          <div class="nm">Unitree Assistant<small>online · replies instantly</small></div>
+        </div>
+        <div class="bubbles">
+          <div class="bub bot">G'day 👋 Unitree Finance here. Chasing business funding?</div>
+          <div class="bub usr">Yeah — need about $120k, fast.</div>
+          <div class="bub bot">Nice one. Quick Qs so Adi can pre-match a lender:
+            <div class="qr"><span>How long trading?</span><span>Monthly turnover?</span><span>Secured or unsecured?</span></div>
+          </div>
+          <div class="bub usr">2 yrs · ~$90k/mo · unsecured</div>
+          <div class="bub bot">Perfect — that's very doable. <b>Booking you with Adi</b> for a 10-min call today. What's your number? 📞</div>
+        </div>
       </div>
     </div>
-    <p class="p" style="font-size:12px;margin-top:16px;color:rgba(255,255,255,.75);max-width:none">
-      <em>Note: illustrative, not a guarantee. Real outcome depends on your lender approval rates, deal size mix, and how fast the Findable + attribution loop compounds. Honest expectation: first signs at 6 weeks, reasonable traction at 3 months, real results by Month 6.</em>
-    </p>
-  </div>
-
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="ads">See the Ad Rebalance →</button>
   </div>
 </section>
 
-<section class="panel" id="ads">
-  <div class="eyebrow">§ 05 <span class="dot">·</span> Ad Rebalance <span class="dot">·</span> Phased, Not Reckless</div>
-  <h1 class="h1">Your A$3,000/month ad spend gets <em>tighter</em>, not <em>cut</em>.</h1>
-  <p class="lead">Ads pay for cold traffic. Cold traffic without an attribution loop, a fast first-touch, and a warmed list is <em>money you rent</em>. As organic proves, we phase the ad spend down — never cut in one step. <strong>Your leads never dip.</strong></p>
+<!-- 3 · THE MATH -->
+<section class="section" id="math">
+  <div class="eyebrow"><span class="num">03</span> <span class="dot">◆</span> The math &amp; more verticals</div>
+  <h2 class="h2">Every lead it catches is worth <span class="b">A$2–3k to you.</span></h2>
+  <p class="sec-sub">That's the whole point. The engine's job is to put more qualified, warmed-up borrowers in front of you — and <strong>each one you settle pays A$2,000–A$3,000 in commission.</strong> It doesn't need to flood you. A handful a month changes the year.</p>
 
-  <div class="grid-3">
-    <div class="card">
-      <div class="card-tag">Phase 0 · Month 1</div>
-      <div class="card-title">A$3,000 → A$1,500</div>
-      <div class="card-body">Half the spend goes to <b>precision retargeting</b> only — people who touched your content, called and hung up, filled a form and stalled. Zero broad prospecting. <b>Every dollar tracked.</b></div>
-      <div class="deliv"><span class="pill">Retargeting only</span><span class="pill">All UTMs</span></div>
-    </div>
-    <div class="card blue">
-      <div class="card-tag b">Months 2–3</div>
-      <div class="card-title">Hold A$1,500</div>
-      <div class="card-body">Organic starts firing (schema live, GBP posts, weekly cadence). Ads still supplement while the flywheel warms. Attribution dashboard tells us what to keep.</div>
-      <div class="deliv"><span class="pill">Attribution live</span><span class="pill">Kill what leaks</span></div>
-    </div>
-    <div class="card">
-      <div class="card-tag">Month 4+</div>
-      <div class="card-title">A$1,500 → A$750</div>
-      <div class="card-body">Organic proven. Ads reduced to <b>protective retargeting only</b> — catching high-intent visitors before they walk. Your leads are now mostly earned, not rented.</div>
-      <div class="deliv"><span class="pill">Owned &gt; rented</span><span class="pill">Compounding</span></div>
-    </div>
+  <div class="valuebar">
+    <div class="k">◆ Per settled deal</div>
+    <div class="big">A$2k–3k <small>commission · every deal</small></div>
+    <p>Land just <b>3 extra deals a month</b> from the engine → <b>~A$6k–9k/month</b> → <b>A$72k–108k a year</b> in commission the engine helped create. And that's business loans alone. <b>Every new vertical below stacks on top.</b></p>
   </div>
 
-  <h2 class="h2">What we <em>stop</em> paying for</h2>
-  <ul class="list">
-    <li><b>Broad prospecting to cold audiences</b> — expensive, hard to attribute, high leakage. Killed at Phase 0.</li>
-    <li><b>Cotality Connect</b> — you flagged this in Q17 as paid-but-barely-used. Either activate it (I show your India team how to feed it into weekly content) or cancel it (savings redirected).</li>
-    <li><b>Any tool duplicated</b> — audit runs in Phase 0 across your full stack (Zoho, aggregators, email, socials).</li>
-  </ul>
-
-  <h2 class="h2">What we <em>start</em> compounding</h2>
-  <ul class="list blue">
-    <li><b>Organic search</b> — schema + FAQ + local pages for both Parramatta and Adelaide offices. AI answers <em>"business loan broker Sydney fast"</em> with your name.</li>
-    <li><b>Weekly cadence</b> — every anchor article becomes an SEO page, a LinkedIn post, a FB post, a video, an email. One thing written, five things shipped.</li>
-    <li><b>Warmed cold outreach</b> — from unitreefinance.online, to referral partners (accountants, advisers), never to your main domain. Compliant, controlled, targeted.</li>
-    <li><b>Retargeting only</b> — ads work harder against warmer audiences. Same clicks, higher intent, better CPL.</li>
-    <li><b>Review repurposing</b> — your Google reviews as quote cards, video overlays, GBP posts. Trust content on autopilot.</li>
-  </ul>
-
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="compliance">See Compliance →</button>
+  <h3 class="h3" style="margin-top:6px">Other verticals to dig — same engine, more profit</h3>
+  <div class="grid-3" style="margin-top:14px">
+    <div class="vert"><div class="ic">⚙️</div><div class="tx"><div class="t">Equipment &amp; asset finance</div><div class="d">Every business buys gear. <b>Recurring, easy cross-sell.</b></div></div></div>
+    <div class="vert"><div class="ic">🏢</div><div class="tx"><div class="t">Commercial property loans</div><div class="d">Bigger loan sizes = <b>bigger commission per deal.</b></div></div></div>
+    <div class="vert"><div class="ic">🚚</div><div class="tx"><div class="t">Vehicle &amp; fleet finance</div><div class="d">Fast, high-volume, simple. <b>Volume play.</b></div></div></div>
+    <div class="vert"><div class="ic">🧾</div><div class="tx"><div class="t">Debtor / invoice finance</div><div class="d">Cashflow tool your clients already need. <b>Sticky.</b></div></div></div>
+    <div class="vert"><div class="ic">🏦</div><div class="tx"><div class="t">SMSF lending</div><div class="d">Higher-value, fewer competitors. <b>Premium niche.</b></div></div></div>
+    <div class="vert"><div class="ic">🏠</div><div class="tx"><div class="t">Residential home loans</div><div class="d">Your business clients are homeowners too. <b>Warm base.</b></div></div></div>
   </div>
+  <p class="sec-sub" style="margin-top:18px;font-size:14px">Pick one to add each quarter. The engine already knows your voice — <em>pointing it at a new vertical is a content tweak, not a rebuild.</em></p>
 </section>
 
-<section class="panel" id="compliance">
-  <div class="eyebrow">§ 06 <span class="dot">·</span> Compliance &amp; Discipline <span class="dot">·</span> Non-Negotiable For A Broker</div>
-  <h1 class="h1">Your name stays <em>clean</em>. Always.</h1>
-  <p class="lead">You're a commercial finance broker under an Australian Credit Licence. Every piece of content, every outbound email, every voice-agent transcript has to sit inside ASIC, ACL and Spam Act rules — <em>even the ones you'd never think of</em>. This is the discipline I hold, not you.</p>
+<!-- 4 · TWO AGENTS -->
+<section class="section" id="agents">
+  <div class="eyebrow"><span class="num">04</span> <span class="dot">◆</span> Two agents to make life easy</div>
+  <h2 class="h2">Two agents. <span class="b">Both aimed straight at your two headaches.</span></h2>
+  <p class="sec-sub">You don't need ten tools. You need <strong>leads caught</strong> and <strong>time back</strong>. These two do exactly that — quietly, 24/7, in your name.</p>
 
-  <div class="warn-card">
-    <h4>ASIC / ACL discipline</h4>
-    <p>Every piece of published content carries a <b>"general information only, not personal financial or credit advice"</b> disclaimer. Your ACL number appears in every email footer. The <b>Voice Agent never quotes rates, never confirms approval, never gives credit advice</b> — it captures, qualifies, books, hands off. You approve every scope change.</p>
-  </div>
-
-  <div class="warn-card b">
-    <h4>Spam Act 2003</h4>
-    <p>Every outbound email carries identification, consent basis, and a working unsubscribe. The 900-contact list gets a "still want to hear from us?" re-permission pass before any marketing sends. <b>unitreefinance.online</b> is used only for compliant outreach — your main <b>unitreefinance.com.au</b> address is never put at risk. Penalties for getting this wrong run to <b>six figures a day</b>. We simply never risk it.</p>
-  </div>
-
-  <div class="warn-card">
-    <h4>MFAA / FBAA display &amp; credentials</h4>
-    <p>Your industry-body membership (MFAA or FBAA), ACL number, and complaint-handling info displayed correctly across the site, GBP, LinkedIn — Findable Layer includes this as trust-signal metadata. If any credential is missing or out-of-date, I flag it in the Phase 0 Findable Diagnostic.</p>
-  </div>
-
-  <div class="warn-card p">
-    <h4>NDA · confidentiality · code ownership</h4>
-    <p>Mutual NDA signed on request before any deep work. Everything you share stays strictly confidential. <b>You own the code, the prompts, the credentials, the trained models.</b> No lock-in. Break clause at 3 months. If we part ways, everything built stays with Unitree.</p>
-  </div>
-
-  <div class="warn-card b">
-    <h4>The refund promise · in writing</h4>
-    <p>The <b>A$4,500 Phase 0 comes with a 100% refundable assurance up to Day 30</b>. No questions. If you don't see enough by Day 30 to continue, I refund the full amount and you keep what's been built so far. <em>Risk sits with me until value lands in the room.</em></p>
-  </div>
-
-  <div class="cta-row">
-    <button class="pillbtn" data-goto="yes">Yes → Start →</button>
-  </div>
-</section>
-
-<section class="panel" id="yes">
-  <div class="eyebrow">§ 07 <span class="dot">·</span> Yes → Start <span class="dot">·</span> Four Things This Week</div>
-  <h1 class="h1">Reply "<em>go</em>" — the Day 1 clock starts <span class="under">the same day</span>.</h1>
-  <p class="lead">The cousin domain <strong>unitreefinance.online</strong> is already registered (Hostinger, ✓ done) so the warmup clock is ready to start Day 1. Every day we delay is a day the Voice Agent isn't taking your missed calls.</p>
-
-  <h2 class="h2">The immediate <em>next steps</em></h2>
-  <div class="timeline">
-    <div class="tl-item done">
-      <div class="tl-tag">Step 1 · Today or tomorrow</div>
-      <div class="tl-h">Cousin domain done ✓ — reply "go" on Phase 0</div>
-      <div class="tl-p">unitreefinance.online is already registered (Hostinger). One WhatsApp line from you and I start the warmup clock, activate the tools, and lock the Saturday kickoff.</div>
-    </div>
-    <div class="tl-item done">
-      <div class="tl-tag">Step 2 · Phase 0 fee</div>
-      <div class="tl-h">A$4,500 · one-time · Phase 0 kicks off</div>
-      <div class="tl-p">Invoice sent on your "go". Once paid, tools activated, Saturday session scheduled. Fully refundable up to Day 30 — <b>no questions</b>.</div>
-    </div>
-    <div class="tl-item done b">
-      <div class="tl-tag">Step 3 · Saturday · ~90 min · this first time</div>
-      <div class="tl-h">Kickoff session · Ashfield / City / Chatswood / your office</div>
-      <div class="tl-p">Logins together. The 30–40 min voice capture — the most valuable half-hour of the whole setup. Ideal-client sentence locked. Tools activated on your card (~$100/mo pass-through, at cost, no markup).</div>
-    </div>
-    <div class="tl-item b">
-      <div class="tl-tag">Step 4 · Days 1–10</div>
-      <div class="tl-h">I build. You approve.</div>
-      <div class="tl-p">List cleaned, warmup running underneath, Findable diagnostic drafted, Voice Agent built &amp; tested. WhatsApp signoffs before anything goes live. Day 10 — Voice Agent live on your line.</div>
-    </div>
-  </div>
-
-  <h2 class="h2">Your part · <em>mostly once</em>, then one hour a week</h2>
   <div class="grid-2">
-    <div class="card blue">
-      <div class="card-tag b">Once · at Saturday session</div>
-      <ul class="list blue" style="margin:6px 0 0">
-        <li>Zoho + Google + socials login access</li>
-        <li>Approval on cousin domain name</li>
-        <li>Your voice · 30–40 min recording</li>
-        <li>Ideal buyer sentence · one line</li>
-        <li>The ~$100/mo tools on your card</li>
-      </ul>
+    <div class="agent a1">
+      <div class="agent-top">
+        <div class="agent-badge">Agent 01 · fixes leads</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M3 11l18-8-8 18-2-8-8-2z" stroke-linejoin="round"/></svg></div>
+        <h4>The Lead Catcher</h4>
+        <div class="role">WhatsApp + web chat + voice · 24/7</div>
+      </div>
+      <div class="agent-body">
+        <div class="desc">Never miss another enquiry. When you're on a deal, driving, or asleep, <b>the Lead Catcher answers in seconds</b> — on WhatsApp, the website chat, and after-hours calls.</div>
+        <ul>
+          <li><b>Instant reply</b> to every enquiry — no lead waits, no lead leaves</li>
+          <li><b>Qualifies</b> them — trading time, turnover, secured/unsecured, amount</li>
+          <li><b>Books the call</b> straight into your calendar, warm and ready</li>
+          <li><b>Sends you</b> the full transcript on WhatsApp before you dial</li>
+        </ul>
+        <div class="solves">◆ Fixes your lead leak — every enquiry captured, day or night.</div>
+      </div>
     </div>
-    <div class="card">
-      <div class="card-tag">Weekly · the standing rhythm</div>
-      <ul class="list">
-        <li><b>Saturday · ~1 hour</b> — we review numbers, you approve the coming week's content</li>
-        <li><b>WhatsApp signoff · 2 min</b> — before Monday. "OK" or mark changes. Nothing publishes without your yes.</li>
-        <li><b>Forward the strays</b> — someone says "I saw your post" → one WhatsApp line, so leads log to source</li>
-      </ul>
+
+    <div class="agent a2">
+      <div class="agent-top">
+        <div class="agent-badge">Agent 02 · fixes time</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h4>The Follow-Up Engine</h4>
+        <div class="role">Auto nurture + re-engage · hands-free</div>
+      </div>
+      <div class="agent-body">
+        <div class="desc">Stop being the bottleneck. The Follow-Up Engine <b>chases every lead and past client for you</b> — so nothing drops while your time goes to closing, not chasing.</div>
+        <ul>
+          <li><b>First-touch in under 60 seconds</b> — the window that converts 9× higher</li>
+          <li><b>Nurtures cold enquiries</b> automatically until they're ready</li>
+          <li><b>Re-wakes past clients</b> for repeat deals + referrals on autopilot</li>
+          <li><b>Frees your day</b> — you show up to booked calls, not admin</li>
+        </ul>
+        <div class="solves">◆ Fixes your time drain — the chasing runs itself.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · HEADACHES SOLVED -->
+<section class="section" id="solved">
+  <div class="eyebrow"><span class="num">05</span> <span class="dot">◆</span> Your two headaches, solved</div>
+  <h2 class="h2">You named two problems.<br><span class="b">Here they are — handled.</span></h2>
+
+  <div class="hache">
+    <div class="hcard h1">
+      <div class="pain">Headache #1</div>
+      <div class="was">"I don't get <em>enough leads</em> — and the ones I get, I lose because I can't reply fast enough."</div>
+      <div class="now-k">✓ Now</div>
+      <div class="now">The <b>engine</b> pulls enquiries in from ads, Google, social &amp; AI search. The <b>Lead Catcher</b> answers every one in seconds and books the call. <b>You stop losing deals to slow replies — for good.</b></div>
+    </div>
+    <div class="hcard h2">
+      <div class="pain">Headache #2</div>
+      <div class="was">"I have <em>no time</em> — chasing, posting, following up all eats the hours I should spend closing."</div>
+      <div class="now-k">✓ Now</div>
+      <div class="now">The <b>Follow-Up Engine</b> does the chasing and nurturing. The content ships itself weekly. <b>Your hours go back to the two things only you can do — closing deals and liaising with lenders.</b></div>
     </div>
   </div>
 
-  <h2 class="h2">And what you <em>never</em> have to do</h2>
-  <ul class="list purple">
-    <li>Write a single post, article or email</li>
-    <li>Learn a single tool interface</li>
-    <li>Touch the ad platform, the CRM, the schema, the email warmup</li>
-    <li>Be on camera. Ever.</li>
-  </ul>
-
-  <div class="warn-card p" style="margin-top:32px">
-    <h4>The honest timeline · so there are no surprises</h4>
-    <p><b>Weeks 1–2</b> · the invisible fortnight. Foundation live, Voice Agent shipping. Nothing public yet. <b>Weeks 3–6</b> · warmup completes, cadence live, first re-engagement to the cleaned list. <b>First opens, first replies. Early signs, not sales.</b> <b>Months 2–3</b> · attribution firing, referral partners nurturing, GBP compounding. <b>First real matured leads routed to you, each stamped with its source.</b> <b>Months 3–6</b> · the payoff window. Consistent presence + warmed list + steady outreach = a predictable flow of qualified enquiry. <b>Beyond Month 6</b> · podcast unlocks, list compounds, agents own more of your inbound. An engine that keeps working while you sleep.</p>
+  <div style="margin-top:30px;text-align:center;padding:34px 24px;background:linear-gradient(135deg,var(--blue),var(--blue-2));border-radius:20px;color:#fff;position:relative;overflow:hidden">
+    <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:1.8px;text-transform:uppercase;color:var(--pink-light);font-weight:600;margin-bottom:12px">◆ Day 1, and it's already working</div>
+    <div style="font-size:26px;font-weight:700;letter-spacing:-.6px;line-height:1.2;margin-bottom:10px;max-width:680px;margin-left:auto;margin-right:auto">Welcome to the engine, Adi. Let's turn caught leads into settled deals — <span style="color:var(--pink-bright)">A$2–3k at a time.</span></div>
+    <div style="font-size:14px;color:#C9C2E8;max-width:560px;margin:0 auto 22px;line-height:1.6">Everything here is yours — tweak it, grow it, add a vertical whenever you're ready. I'm one message away, every step.</div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="pillbtn wa" href="https://wa.me/61481823600?text=Hi%20-%20let%27s%20get%20the%20first%20leads%20flowing." target="_blank" rel="noopener">◆ Message the lead line</a>
+      <a class="pillbtn" style="background:var(--pink)" href="https://wa.me/61469313323?text=Raj%20-%20quick%20one%20about%20the%20engine." target="_blank" rel="noopener">Ask Raj anything</a>
+    </div>
   </div>
-
-  <div class="cta-row" style="margin-top:36px">
-    <a class="pillbtn" href="https://wa.me/61469313323?text=Adi%20here%20from%20Unitree%20Finance%20%E2%80%94%20go.%20Ready%20for%20Phase%200." target="_blank" rel="noopener">WhatsApp: "GO" →</a>
-    <a class="pillbtn blue" href="mailto:raj@artigellence.com?subject=Unitree%20Finance%20%C2%B7%20Phase%200%20%C2%B7%20GO&body=Hi%20Raj%2C%0A%0AGo.%20Please%20send%20the%20Phase%200%20invoice%20and%20let's%20lock%20the%20Saturday%20session.%0A%0AAdi%20%C2%B7%20Unitree%20Finance">Email: raj@artigellence.com</a>
-    <a class="pillbtn ghost" href="tel:+61469313323">Call · +61 469 313 323</a>
-  </div>
-
-  <p class="p" style="margin-top:36px;font-family:var(--sans);font-style:italic;font-size:17px;color:var(--body);border-top:1px solid var(--line);padding-top:28px">
-    Adi — you told me the pain is "getting leads, talking to them, nurturing, liaising with lenders, closing." I can't do the lender-liaising or the closing — that's your relationship. But the <em>first four</em>? That's exactly what this engine does — while you focus on the deal. Founder-direct, from me, every step. Look forward to your <em>go</em>. — <b style="color:var(--pink);font-style:normal">Raj</b>
-  </p>
 </section>
 
 </main>
@@ -834,57 +609,83 @@ html.dark .shape.c{opacity:.16}
 <footer>
   <div class="foot-inner">
     <div class="foot-brand">
-      <span class="l">Unitree Finance <em>×</em> AAA by Artigellence</span>
-      <span class="s">Founder-Direct AI · Sydney · Tailored at every meeting</span>
+      <div class="l">Unitree Finance <em>×</em> AAA by Artigellence</div>
+      <div class="s">Your Growth Engine · Live Day 1 · Prepared for Aditya Kumar</div>
     </div>
-    <div class="foot-links">
-      <a href="https://unitreefinance.com.au" target="_blank">unitreefinance.com.au</a>
-      <a href="https://unitreefinance.online" target="_blank">unitreefinance.online</a>
-      <a href="https://rajsingh.online" target="_blank">rajsingh.online</a>
-      <a href="mailto:raj@artigellence.com">raj@artigellence.com</a>
-      <a href="tel:+61469313323">+61 469 313 323</a>
+    <div style="text-align:right;font-family:var(--mono);font-size:10px;color:var(--mute);line-height:1.8">
+      Lead line · +61 481 823 600 · @Unitreefinance<br>
+      raj@artigellence.com · +61 469 313 323 · rajsingh.online
     </div>
   </div>
   <div class="foot-legal">
-    Prepared for Aditya Kumar / Unitree Finance under mutual NDA. This document is a working prototype and a proposal — not a contract, not personal financial or credit advice. All figures are honest estimates and market benchmarks, not guarantees. Phase 0 refund clause applies up to Day 30. ABN 83 988 690 362 · Sydney, Australia · © 2026 Artigellence.
+    Sample content marked "Sample" is illustrative — swap for real deals, reviews &amp; numbers before going public. All marketing built ASIC / ACL / Spam Act-clean, reviewed by Adi before publish.<br>
+    Unitree Finance × AAA by Artigellence · ABN 83 988 690 362 · just an idea in motion, tailored at every meeting as we grow.
   </div>
 </footer>
 
+<!-- FLOATING CHAT WIDGET -->
+<button class="fab" id="fab" onclick="toggleChat()" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" fill="#0B1F1A"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.6 4.1.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+  <span class="dot">1</span>
+</button>
+
+<div class="chatwin" id="chatwin">
+  <div class="cw-head">
+    <div class="av">U</div>
+    <div class="nm">Unitree Finance<small>online · replies instantly</small></div>
+    <button class="x" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="cw-body" id="cwBody">
+    <div class="b bot">G'day 👋 Unitree Finance here — fast, low-doc business funding. What are you after?</div>
+  </div>
+  <div class="cw-qr" id="cwQr"></div>
+  <div class="cw-foot">
+    <a href="https://wa.me/61481823600?text=Hi%20Unitree%20Finance%20-%20I%27d%20like%20to%20talk%20about%20business%20funding." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#0B1F1A"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7.9-.8 1-.1.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.7.1.2 1.9 3 4.6 4.1.6.3 1.1.5 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+      Continue on WhatsApp →
+    </a>
+  </div>
+  <div class="cw-note">Demo bot · runs in-page · production version wires to your CRM + WhatsApp Business API</div>
+</div>
+
 <script>
-(function(){
-  const tog=document.getElementById('theme-tog'),ico=document.getElementById('theme-ico'),lbl=document.getElementById('theme-lbl');
-  const root=document.documentElement;
-  const saved=localStorage.getItem('u-theme');
-  function paint(){const d=root.classList.contains('dark');ico.textContent=d?'☀':'◐';lbl.textContent=d?'LIGHT':'DARK'}
-  // Only override existing state if user explicitly toggled before
-  if(saved==='dark') root.classList.add('dark');
-  else if(saved==='light') root.classList.remove('dark');
-  paint();
-  tog.addEventListener('click',()=>{root.classList.toggle('dark');try{localStorage.setItem('u-theme',root.classList.contains('dark')?'dark':'light')}catch(e){}paint()});
-})();
-document.querySelectorAll('.tab').forEach(t=>{
-  t.addEventListener('click',()=>switchTab(t.dataset.tab));
-});
-document.querySelectorAll('[data-goto]').forEach(b=>{
-  b.addEventListener('click',()=>{switchTab(b.dataset.goto);window.scrollTo({top:0,behavior:'smooth'})});
-});
-function switchTab(id){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
-  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));
+// ===== chat widget =====
+const FLOW = {
+  start: { qr: ["I need funding fast","How much can I get?","What do I need?"] },
+  "I need funding fast": { bot: "Love it ⚡ Fast &amp; low-doc is our thing — often an answer in <b>one business day</b>. How much are you after?", qr:["Under $50k","$50k–$150k","$150k+"] },
+  "How much can I get?": { bot:"Typically <b>$5k to $500k</b> unsecured, depending on turnover &amp; time trading. How long have you been operating?", qr:["Under 1 year","1–2 years","2+ years"] },
+  "What do I need?": { bot:"For low-doc: usually just <b>6 months of bank statements</b> and a few basics — no property security needed. Want Adi to check your eligibility?", qr:["Yes, check me","Book a call"] },
+  "Under $50k":{bot:"Easy range 👍 Usually quick to approve. How long trading?",qr:["Under 1 year","1–2 years","2+ years"]},
+  "$50k–$150k":{bot:"Very doable ✅ Adi places these daily. How long has the business been running?",qr:["Under 1 year","1–2 years","2+ years"]},
+  "$150k+":{bot:"Nice — bigger facilities need a quick chat to match the right lender. How long trading?",qr:["1–2 years","2+ years"]},
+  "Under 1 year":{bot:"We've got lenders for newer businesses too. <b>Let's get Adi to look</b> — pop your number in and he'll call today 📞",qr:["Book a call"]},
+  "1–2 years":{bot:"Perfect — plenty of options at that stage. <b>Booking you with Adi</b> for a 10-min call. Drop your number 📞",qr:["Book a call"]},
+  "2+ years":{bot:"Great — you'll have strong options &amp; sharp rates. <b>Adi will pre-match a lender before you even talk.</b> Ready?",qr:["Book a call","Yes, check me"]},
+  "Yes, check me":{bot:"🙌 Best way is a quick WhatsApp so Adi can reply with real numbers. Tap below 👇",end:true},
+  "Book a call":{bot:"🙌 Done — quickest is WhatsApp, Adi will confirm a time in minutes. Tap below 👇",end:true}
+};
+let started=false;
+function toggleChat(){ const w=document.getElementById('chatwin'); w.classList.toggle('open'); if(w.classList.contains('open')&&!started){started=true; renderQr(FLOW.start.qr);} document.querySelector('.fab .dot').style.display=w.classList.contains('open')?'none':'flex'; }
+function openChat(){ const w=document.getElementById('chatwin'); if(!w.classList.contains('open')) toggleChat(); }
+function addBub(txt,who){ const b=document.getElementById('cwBody'); const d=document.createElement('div'); d.className='b '+who; d.innerHTML=txt; b.appendChild(d); b.scrollTop=b.scrollHeight; }
+function renderQr(list){ const q=document.getElementById('cwQr'); q.innerHTML=''; (list||[]).forEach(t=>{ const btn=document.createElement('button'); btn.textContent=t.replace(/&amp;/g,'&'); btn.onclick=()=>pick(t); q.appendChild(btn); }); }
+function pick(key){
+  addBub(key.replace(/&amp;/g,'&'),'usr');
+  document.getElementById('cwQr').innerHTML='';
+  const node=FLOW[key];
+  setTimeout(()=>{
+    if(node&&node.bot){ addBub(node.bot,'bot'); renderQr(node.qr); }
+    else { addBub("Good one — let's take it to WhatsApp so Adi can help properly 👇",'bot'); }
+  },420);
 }
-const rMat=document.getElementById('r-mat'), vMat=document.getElementById('v-mat');
-const rPer=document.getElementById('r-per'), vPer=document.getElementById('v-per');
-const rCost=document.getElementById('r-cost'), vCost=document.getElementById('v-cost');
-const oRev=document.getElementById('o-rev'), oCost=document.getElementById('o-cost'), oNet=document.getElementById('o-net'), o6m=document.getElementById('o-6m'), oRoi=document.getElementById('o-roi');
-const fmt=n=>'A$'+Math.round(n).toLocaleString();
-function recalc(){
-  const m=+rMat.value, p=+rPer.value, c=+rCost.value;
-  vMat.textContent=m; vPer.textContent=fmt(p); vCost.textContent=fmt(c);
-  const rev=m*p, net=rev-c, six=net*6, roi=rev/c;
-  oRev.textContent=fmt(rev); oCost.textContent=fmt(c); oNet.textContent=fmt(net); o6m.textContent=fmt(six); oRoi.textContent=roi.toFixed(1)+'×';
-}
-[rMat,rPer,rCost].forEach(r=>r.addEventListener('input',recalc));
-recalc();
+// ===== copy chips =====
+document.querySelectorAll('[data-copy]').forEach(el=>{
+  el.addEventListener('click',()=>{
+    const t=el.getAttribute('data-copy');
+    navigator.clipboard&&navigator.clipboard.writeText(t);
+    const o=el.textContent; el.textContent='copied ✓'; setTimeout(()=>el.textContent=o,1400);
+  });
+});
 </script>
 </body>
 </html>
